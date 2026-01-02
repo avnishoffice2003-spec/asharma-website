@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-01YJ2ZVMQW');
+</script>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<title>Careers at A. Sharma & Co. | Legal Jobs & CS Training in Noida</title>
+<meta name="description" content="Join an elite team of corporate legal professionals. Opportunities for Senior Associates, CS Management Trainees, and Legal Interns in Noida.">
+<meta name="keywords" content="Legal Jobs Noida, Company Secretary Vacancy, Law Firm Internships, CS Trainee Jobs, Legal Associate Careers">
+
+<meta property="og:title" content="Build Your Legal Legacy | Careers">
+<meta property="og:description" content="Work on high-stakes NCLT and FEMA matters. Join the elite.">
+<meta property="og:url" content="https://www.asharmaco.com/careers.html">
+<meta property="og:image" content="https://www.asharmaco.com/images/social-preview.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Build Your Legacy at A. Sharma & Co.</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================
+           1. CORE SYSTEM & TITAN VARIABLES
+           ========================================= */
+        :root {
+            --navy-deep: #020d17;
+            --navy-royal: #0a2540;
+            --gold-prime: #c5a059;
+            --gold-light: #e0b46a;
+            --white: #ffffff;
+            --grey-light: #f9fafb;
+            --text-dark: #1a1a1a;
+            --transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy-royal);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition); }
+        ul { list-style: none; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
+
+        /* HEADER ARCHITECTURE (TITAN VERSION) */
+        .top-bar {
+            background-color: var(--navy-deep); color: #b0b0b0; padding: 10px 0;
+            font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky; top: 0; z-index: 1100; border-bottom: 2px solid var(--gold-prime);
+        }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+        .contact-snippets span { margin-right: 25px; }
+        .contact-snippets i { color: var(--gold-prime); margin-right: 8px; }
+        .social-links a { color: #b0b0b0; margin-left: 20px; }
+        .social-links a:hover { color: var(--gold-prime); }
+
+        .main-header {
+            background: var(--white); height: 90px; display: flex; align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: sticky; top: 46px; z-index: 1000;
+            border-bottom: 4px solid var(--gold-prime); transition: height 0.3s ease;
+        }
+        
+        /* Spacing Fix */
+        .main-header .container {
+            display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 50px;
+        }
+
+        .logo-area { display: flex; align-items: center; gap: 12px; min-width: 250px; flex-shrink: 0; }
+        .logo-main { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; }
+        .logo-sub { font-family: 'Lato', sans-serif; font-size: 0.6rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; }
+        
+        .navbar { margin-left: auto; }
+        .nav-list { display: flex; align-items: center; gap: 35px; }
+        .nav-link { font-weight: 600; font-size: 0.9rem; color: var(--navy-royal); text-transform: uppercase; padding: 30px 0; position: relative; cursor: pointer; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link::after { content: ''; position: absolute; bottom: 25px; left: 0; width: 0; height: 2px; background: var(--gold-prime); transition: width 0.3s ease; }
+        
+        .btn-header {
+            background: transparent; color: var(--navy-royal); padding: 10px 24px;
+            font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            border: 2px solid var(--gold-prime); border-radius: 2px; transition: all 0.3s ease;
+        }
+        .btn-header:hover { background: var(--gold-prime); color: var(--white); transform: translateY(-1px); }
+
+        /* Dropdowns */
+        .has-dropdown { position: relative; }
+        .mega-menu {
+            position: absolute; top: 100%; left: -20px; background: var(--white); width: 260px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12); opacity: 0; visibility: hidden;
+            transform: translateY(15px); transition: all 0.3s; border-top: 4px solid var(--gold-prime); padding: 10px 0;
+        }
+        .has-dropdown:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .mega-menu ul { display: block !important; padding: 0; margin: 0; }
+        .mega-menu li { display: block !important; width: 100%; border-bottom: 1px solid #f2f2f2; }
+        .mega-menu li:last-child { border-bottom: none; }
+        .mega-menu a { display: block !important; padding: 14px 25px; color: #555; font-size: 0.9rem; transition: all 0.2s; }
+        .mega-menu a:hover { background-color: #fafafa; color: var(--navy-royal); padding-left: 30px; border-left: 3px solid var(--gold-prime); }
+
+        /* PAGE SPECIFIC: CAREERS HERO */
+        .careers-hero {
+            position: relative; height: 60vh;
+            background: linear-gradient(rgba(5, 22, 38, 0.9), rgba(5, 22, 38, 0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
+        }
+        .careers-hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 20px; color: #ffffff !important; text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+        .careers-hero .lead { font-family: 'Lato', sans-serif; font-size: 1.2rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-prime) !important; font-weight: 700; text-shadow: 0 2px 10px rgba(0,0,0,0.8); margin-bottom: 10px; display: block; }
+        .hero-desc { opacity: 1; color: #f0f0f0 !important; font-size: 1.2rem; max-width: 700px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.8); font-weight: 400; }
+
+        /* CULTURE GRID */
+        .culture-section { padding: 100px 0; background: #fff; }
+        .culture-intro { text-align: center; max-width: 800px; margin: 0 auto 60px auto; }
+        .culture-intro h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-royal); margin-bottom: 20px; }
+        .culture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .culture-card { padding: 40px 30px; background: var(--white); border: 1px solid #eee; border-top: 4px solid var(--navy-royal); transition: all 0.3s ease; }
+        .culture-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-top-color: var(--gold-prime); }
+        .culture-icon { font-size: 2.5rem; color: var(--navy-royal); margin-bottom: 25px; }
+        .culture-card h4 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; color: var(--navy-royal); }
+        .culture-card p { color: #666; line-height: 1.6; }
+
+        /* TALENT PHILOSOPHY */
+        .philosophy-section { background: var(--grey-light); padding: 80px 0; display: flex; align-items: center; }
+        .philosophy-box { background: var(--navy-deep); color: #fff; padding: 60px; border-radius: 4px; position: relative; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .philosophy-box::before { content: '"'; position: absolute; top: -20px; right: 20px; font-family: 'Playfair Display', serif; font-size: 10rem; opacity: 0.1; color: var(--gold-prime); }
+        .philosophy-box h3 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold-prime); margin-bottom: 20px; }
+
+        /* OPEN POSITIONS */
+        .jobs-section { padding: 100px 0; }
+        .job-card { display: flex; justify-content: space-between; align-items: center; padding: 30px; border: 1px solid #eee; margin-bottom: 20px; transition: all 0.3s ease; background: #fff; }
+        .job-card:hover { border-left: 5px solid var(--gold-prime); box-shadow: 0 10px 30px rgba(0,0,0,0.05); transform: translateX(5px); }
+        .job-info h4 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--navy-royal); margin-bottom: 5px; }
+        .job-meta { color: #777; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .apply-btn { background: var(--navy-royal); color: #fff; padding: 12px 30px; font-weight: 700; border-radius: 4px; transition: all 0.3s ease; }
+        .apply-btn:hover { background: var(--gold-prime); color: var(--navy-royal); }
+
+        /* TITAN FOOTER STYLES */
+        .titan-footer {
+            background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; position: relative; z-index: 10;
+        }
+        .footer-cta { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
+        .cta-text h3 { color: #fff; font-size: 2rem; margin-bottom: 5px; }
+        .cta-text p { color: var(--gold-prime); font-size: 1.1rem; margin: 0; }
+        .footer-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); margin-bottom: 60px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; margin-bottom: 20px; display: block; }
+        .brand-desc { line-height: 1.6; margin-bottom: 25px; opacity: 0.8; }
+        .social-links-footer { display: flex; gap: 15px; }
+        .social-links-footer a { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s; }
+        .social-links-footer a:hover { background: var(--gold-prime); border-color: var(--gold-prime); color: var(--navy-deep); }
+        .footer-col h4 { color: #fff; margin-bottom: 25px; font-size: 1.1rem; letter-spacing: 1px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { transition: all 0.3s; display: inline-block; }
+        .footer-links a:hover { color: var(--gold-prime); transform: translateX(5px); }
+        .contact-col p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; }
+        .contact-col i { color: var(--gold-prime); margin-top: 5px; }
+        .footer-bottom-row { background: rgba(0,0,0,0.2); padding: 30px 40px; border-radius: 4px 4px 0 0; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid var(--gold-prime); }
+        .newsletter-area { display: flex; align-items: center; gap: 20px; }
+        .newsletter-area span { color: #fff; font-weight: 700; }
+        .footer-form { display: flex; }
+        .footer-form input { padding: 12px 15px; border: none; outline: none; background: #fff; font-family: 'Lato', sans-serif; min-width: 250px; }
+        .footer-form button { background: var(--gold-prime); border: none; width: 50px; cursor: pointer; color: #fff; transition: 0.3s; font-size: 1.1rem; }
+        .footer-form button:hover { background: #fff; color: var(--navy-deep); }
+        .legal-links { font-size: 0.85rem; }
+        .legal-links a { color: #888; margin-left: 20px; transition: 0.3s; }
+        .legal-links a:hover { color: var(--gold-prime); }
+
+        @media (max-width: 900px) {
+            .culture-grid { grid-template-columns: 1fr; }
+            .job-card { flex-direction: column; text-align: center; gap: 20px; }
+            .careers-hero h1 { font-size: 2.5rem; }
+            .navbar { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-cta, .footer-bottom-row, .newsletter-area { flex-direction: column; text-align: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-snippets">
+                <span><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</span>
+                <span><i class="fas fa-phone-alt"></i> +91-8126828661</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="logo-area">
+                <i class="fas fa-balance-scale" style="font-size: 2.2rem; color: var(--navy-royal); margin-right: 15px;"></i>
+                <div class="logo-text-group">
+                    <span class="logo-main">A. Sharma & Co.</span>
+                    <span class="logo-sub">Legal Consultants</span>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    
+                    <li class="has-dropdown">
+                        <span class="nav-link active" onclick="return false;">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
+                        <ul class="mega-menu">
+                            <li><a href="heritage.html">Our Heritage</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <span class="nav-link" onclick="return false;">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
+                        <ul class="mega-menu" style="width: 300px;">
+                            <li><a href="service-corporate.html">Corporate Governance</a></li>
+                            <li><a href="service-taxation.html">Taxation & GST</a></li>
+                            <li><a href="service-fema.html">FEMA & RBI</a></li>
+                            <li><a href="service-nclt.html">Litigation</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="links.html">Useful Links</a></li>
+                    <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
+                    <li><a href="contact.html" class="btn-header">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="careers-hero">
+        <div class="container">
+            <span class="lead">Join The Elite</span>
+            <h1>Where Ambition Meets Excellence</h1>
+            <p class="hero-desc">
+                We don't just hire employees. We partner with the future architects of corporate law.
+            </p>
+        </div>
+    </section>
+
+    <section class="culture-section">
+        <div class="container">
+            <div class="culture-intro">
+                <h2>Not Just a Law Firm. A Launchpad.</h2>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">
+                    Working at A. Sharma & Co. is demanding, intellectual, and immensely rewarding. We operate at the intersection of high-stakes litigation and complex compliance.
+                </p>
+            </div>
+            
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <i class="fas fa-chess-knight culture-icon"></i>
+                    <h4>Elite Mentorship</h4>
+                    <p>Work directly alongside our Principals. There are no back-benches here; you will be drafted into NCLT matters and FEMA structuring from Day 1.</p>
+                </div>
+                <div class="culture-card">
+                    <i class="fas fa-rocket culture-icon"></i>
+                    <h4>Rapid Ascension</h4>
+                    <p>We believe in meritocracy over tenure. Demonstrate mastery, and your path to Senior Associate and beyond is accelerated.</p>
+                </div>
+                <div class="culture-card">
+                    <i class="fas fa-globe-asia culture-icon"></i>
+                    <h4>Global Exposure</h4>
+                    <p>Handle cross-border transactions involving FDI and ECB, giving you a skillset that rivals top-tier international firms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy-section">
+        <div class="container">
+            <div class="philosophy-box">
+                <h3>Our Talent Philosophy</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9; color: #f4f4f4;">
+                    "We do not seek individuals who simply want a 'job.' We seek those who treat Law as a craft. We value precision, intellectual curiosity, and the ability to find solutions where others see dead ends. If you are ready to be challenged every single day, you belong here."
+                </p>
+                <p style="margin-top: 20px; color: var(--gold-prime); font-weight: 700;">— CS Avnish Sharma, Founder</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="jobs-section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-royal);">Current Opportunities</h2>
+                <div style="width: 60px; height: 3px; background: var(--gold-prime); margin: 20px auto;"></div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h4>Senior Legal Associate</h4>
+                    <div class="job-meta">
+                        <span style="margin-right: 15px;"><i class="fas fa-map-marker-alt"></i> Noida (Hybrid)</span>
+                        <span><i class="fas fa-briefcase"></i> Corporate Law / NCLT</span>
+                    </div>
+                </div>
+                <a href="mailto:csavnishsharma@gmail.com?subject=Application for Senior Legal Associate" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h4>Compliance Officer (CS)</h4>
+                    <div class="job-meta">
+                        <span style="margin-right: 15px;"><i class="fas fa-map-marker-alt"></i> Noida</span>
+                        <span><i class="fas fa-file-contract"></i> Secretarial Compliance</span>
+                    </div>
+                </div>
+                <a href="mailto:csavnishsharma@gmail.com?subject=Application for Compliance Officer" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h4>Legal Intern (Research)</h4>
+                    <div class="job-meta">
+                        <span style="margin-right: 15px;"><i class="fas fa-laptop"></i> Remote / In-Office</span>
+                        <span><i class="fas fa-graduation-cap"></i> Students / Freshers</span>
+                    </div>
+                </div>
+                <a href="mailto:csavnishsharma@gmail.com?subject=Application for Internship" class="apply-btn">Apply Now</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: #f9f9f9; border-radius: 4px;">
+                <h4 style="color: var(--navy-royal); font-size: 1.5rem; margin-bottom: 15px;">Don't see your role?</h4>
+                <p style="margin-bottom: 20px; color: #666;">We are always looking for exceptional talent. Send us your CV and a cover letter telling us why you are the missing piece.</p>
+                <a href="mailto:csavnishsharma@gmail.com?subject=Spontaneous Application" class="btn btn-gold">Send Open Application</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="titan-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="cta-text">
+                    <h3>Ready to Engineer Your Career?</h3>
+                    <p>Join India's premier corporate legal strategists.</p>
+                </div>
+                <a href="contact.html" class="btn btn-gold">Apply Now</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">A. SHARMA & CO.</a>
+                    <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
+                    <div class="social-links-footer">
+                        <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>The Firm</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Our Heritage</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Expertise</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-corporate.html">Corporate Law</a></li>
+                        <li><a href="service-taxation.html">Taxation & GST</a></li>
+                        <li><a href="service-fema.html">FEMA Advisory</a></li>
+                        <li><a href="service-nclt.html">Dispute Resolution</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh (India)</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-9557513775</p>
+                    <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="newsletter-area">
+                    <span>Subscribe to Legal Insights:</span>
+                    <form onsubmit="subscribeNewsletter(event)" class="footer-form">
+                        <input type="email" id="news-email" placeholder="Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="legal-links">
+                    <span>&copy; 2025 A. Sharma & Co.</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Engagement</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.height = '75px';
+                header.style.top = '46px';
+            } else {
+                header.style.height = '90px';
+                header.style.top = '46px';
+            }
+        });
+
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            var email = document.getElementById('news-email').value;
+            if(email) {
+                alert("Thank you for subscribing! You will receive legal updates at " + email);
+                document.getElementById('news-email').value = "";
+            }
+        }
+    </script>
+</body>
+</html>

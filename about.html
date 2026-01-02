@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-01YJ2ZVMQW');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Firm | A. Sharma & Co.</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================
+           1. CORE VARIABLES (Same as Index)
+           ========================================= */
+        :root {
+            --navy-deep: #051626;
+            --navy-royal: #0a2540;
+            --gold-prime: #c5a059;
+            --grey-light: #f4f6f9;
+            --white: #ffffff;
+            --font-head: 'Playfair Display', serif;
+            --font-body: 'Lato', sans-serif;
+            --transition: all 0.3s ease-in-out;
+            --shadow-card: 0 10px 30px rgba(0,0,0,0.08);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); color: #333; line-height: 1.6; background-color: var(--white); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+        .section-padding { padding: 100px 0; }
+        
+        /* HEADER (Exact copy for consistency) */
+        .main-header {
+            background: var(--white);
+            height: 90px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo-area { display: flex; align-items: center; gap: 15px; min-width: 280px; }
+        .logo-text { font-family: var(--font-head); font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; line-height: 1.1; }
+        .navbar { margin-left: auto; }
+        .nav-list { display: flex; align-items: center; gap: 30px; }
+        .nav-link { font-weight: 600; font-size: 0.95rem; color: var(--navy-royal); position: relative; padding: 10px 0; }
+        .nav-link:hover { color: var(--gold-prime); }
+        .btn-gold { background: var(--gold-prime); color: #fff; padding: 12px 25px; border-radius: 4px; font-weight: 700; }
+        .btn-gold:hover { background: var(--navy-royal); }
+
+        /* HERO BANNER (About Page Specific) */
+        .page-banner {
+            background: linear-gradient(rgba(5, 22, 38, 0.8), rgba(5, 22, 38, 0.8)), url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+        .banner-title { font-size: 3.5rem; font-family: var(--font-head); margin-bottom: 10px; }
+        .banner-subtitle { font-size: 1.2rem; color: var(--gold-prime); letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
+
+        /* CONTENT STYLES */
+        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .story-text h2 { font-family: var(--font-head); font-size: 2.5rem; color: var(--navy-royal); margin-bottom: 25px; }
+        .story-text p { margin-bottom: 20px; font-size: 1.05rem; color: #555; }
+        
+        /* Stats Strip */
+        .stats-row { display: flex; gap: 40px; margin-top: 30px; }
+        .stat-box h4 { font-size: 2.5rem; color: var(--gold-prime); font-family: var(--font-head); margin-bottom: 0; line-height: 1; }
+        .stat-box p { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: #777; }
+
+        /* Team Section */
+        .team-section { background: var(--grey-light); }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; margin-top: 50px; }
+        
+        .team-card {
+            background: var(--white);
+            padding: 40px;
+            border-top: 5px solid var(--navy-royal);
+            box-shadow: var(--shadow-card);
+            transition: var(--transition);
+        }
+        .team-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); border-top-color: var(--gold-prime); }
+        .member-role { color: var(--gold-prime); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 15px; display: block; }
+        .member-name { font-size: 1.8rem; font-family: var(--font-head); color: var(--navy-royal); margin-bottom: 15px; }
+        .member-qual { font-weight: 700; color: #444; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .member-bio { font-size: 0.95rem; color: #666; line-height: 1.7; }
+
+        /* Partner Alliance */
+        .alliance-box {
+            background: var(--navy-deep);
+            color: var(--white);
+            padding: 60px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .alliance-title { color: var(--gold-prime); margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* FOOTER (Same as Index) */
+        .main-footer { background: var(--navy-deep); color: #a0a0a0; padding: 80px 0 30px; margin-top: 0; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .footer-logo { font-family: var(--font-head); font-size: 1.8rem; color: var(--white); margin-bottom: 20px; display: block; }
+        .footer-col h4 { color: var(--white); margin-bottom: 25px; font-size: 1.2rem; }
+        .footer-col a:hover { color: var(--gold-prime); }
+        
+        @media (max-width: 900px) {
+            .story-grid { grid-template-columns: 1fr; }
+            .banner-title { font-size: 2.5rem; }
+            .navbar { display: none; } /* Mobile Menu Logic needed if strictly responsive */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html" style="display: flex; align-items: center; gap: 15px;">
+                    <i class="fas fa-balance-scale" style="font-size: 2rem; color: var(--navy-royal);"></i>
+                    <div class="logo-text">
+                        A. Sharma & Co.<br>
+                        <span style="font-size: 0.7rem; font-family: var(--font-body); letter-spacing: 3px; color: #777;">Legal Consultants</span>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link" style="color: var(--gold-prime);">The Firm</a></li> <li><a href="service-corporate.html" class="nav-link">Practice Areas</a></li>
+                    <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
+                    <li><a href="contact.html" class="btn-gold">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div>
+            <span class="banner-subtitle">Our Heritage</span>
+            <h1 class="banner-title">Built on Trust & Precision</h1>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text">
+                    <h2>Defining Corporate Excellence Since 2020</h2>
+                    <p>A. Sharma & Co. was founded on a singular principle: <strong>Compliance should be a strategic asset, not a burden.</strong></p>
+                    <p>We saw a gap in the market for legal consultancy that was both technically rigorous and commercially practical. Starting with a focus on SME compliance, we have grown into a powerhouse for Corporate Governance, NCLT matters, and Cross-Border Taxation.</p>
+                    <p>Our approach is proactive. We don't just solve legal problems; we anticipate them, building a fortress around your business operations.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <h4>2+</h4>
+                            <p>Years Focused Growth</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>500+</h4>
+                            <p>Cases Consulted</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Meeting" style="width: 100%; border-radius: 4px; box-shadow: var(--shadow-card);">
+                </div>
+            </div>
+            
+            <div class="alliance-box">
+                <span class="alliance-title">Strategic Alliance</span>
+                <h3 style="font-family: var(--font-head); font-size: 2rem; margin: 15px 0;">A. Sharma & Co.  <span style="color: var(--gold-prime);">×</span>  LAW WHEELS SERVICES LLP</h3>
+                <p style="max-width: 700px; margin: 0 auto 30px; opacity: 0.9;">Our partnership with Law Wheels Services LLP expands our capabilities, offering you a dual-layer of legal protection and specialized advisory in litigation and heavy compliance matters.</p>
+                <a href="https://lawwheelsservices.co.in" target="_blank" class="btn-gold">Visit Partner Website</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding team-section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <span style="color: var(--gold-prime); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Leadership</span>
+                <h2 style="font-family: var(--font-head); font-size: 3rem; color: var(--navy-royal);">Meet The Principals</h2>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <span class="member-role">Founder & Principal Consultant</span>
+                    <h3 class="member-name">CS Avnish Sharma</h3>
+                    <div class="member-qual">CS, B.Com, LLB</div>
+                    <p class="member-bio">Avnish leads the firm's Corporate Governance and Secretarial Compliance division. With a sharp eye for regulatory detail, he specializes in simplifying complex NCLT matters and ensuring watertight statutory compliance for growing enterprises.</p>
+                </div>
+
+                <div class="team-card">
+                    <span class="member-role">Strategic Advisor (Partner)</span>
+                    <h3 class="member-name">Adv. Surender Sharma</h3>
+                    <div class="member-qual">B.Com, LLB, LLM</div>
+                    <p class="member-bio">A seasoned litigator and strategic advisor, Surender brings over 12 years of experience. He anchors our partnership with Law Wheels Services LLP, providing robust counsel on FEMA/RBI regulations and international investment structures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="font-family: var(--font-head); font-size: 2.5rem; color: var(--navy-royal);">Our Core Principles</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center;">
+                <div style="padding: 30px; border: 1px solid #eee;">
+                    <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--gold-prime); margin-bottom: 20px;"></i>
+                    <h4>Strategic Insight</h4>
+                    <p style="color: #666;">Looking beyond the law to the business impact.</p>
+                </div>
+                <div style="padding: 30px; border: 1px solid #eee;">
+                    <i class="fas fa-hand-holding-heart" style="font-size: 2rem; color: var(--gold-prime); margin-bottom: 20px;"></i>
+                    <h4>Integrity First</h4>
+                    <p style="color: #666;">Uncompromising ethical standards in every deal.</p>
+                </div>
+                <div style="padding: 30px; border: 1px solid #eee;">
+                    <i class="fas fa-comments" style="font-size: 2rem; color: var(--gold-prime); margin-bottom: 20px;"></i>
+                    <h4>Radical Transparency</h4>
+                    <p style="color: #666;">Clear reporting. No hidden clauses. No jargon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">A. SHARMA & CO.</a>
+                    <p>Defining excellence in corporate law since 2003.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About The Firm</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>+91-8126828661</p>
+                    <p>csavnishsharma@gmail.com</p>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+                <p>&copy; 2025 A. Sharma & Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

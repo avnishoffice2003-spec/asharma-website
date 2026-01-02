@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-01YJ2ZVMQW');
+</script>
+<link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulatory Intelligence | A. Sharma & Co.</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================================
+           1. CORE SYSTEM & TITAN VARIABLES
+           ========================================= */
+        :root {
+            --navy-deep: #020d17;
+            --navy-royal: #0a2540;
+            --gold-prime: #c5a059;
+            --gold-light: #e0b46a;
+            --white: #ffffff;
+            --grey-light: #f9fafb;
+            --text-dark: #1a1a1a;
+            --transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy-royal);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition); }
+        ul { list-style: none; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
+
+        /* HEADER ARCHITECTURE (TITAN VERSION) */
+        .top-bar {
+            background-color: var(--navy-deep); color: #b0b0b0; padding: 10px 0;
+            font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky; top: 0; z-index: 1100; border-bottom: 2px solid var(--gold-prime);
+        }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
+        .contact-snippets span { margin-right: 25px; }
+        .contact-snippets i { color: var(--gold-prime); margin-right: 8px; }
+        .social-links a { color: #b0b0b0; margin-left: 20px; }
+        .social-links a:hover { color: var(--gold-prime); }
+
+        .main-header {
+            background: var(--white); height: 90px; display: flex; align-items: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: sticky; top: 46px; z-index: 1000;
+            border-bottom: 4px solid var(--gold-prime); transition: height 0.3s ease;
+        }
+        
+        /* Spacing Fix */
+        .main-header .container {
+            display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 50px;
+        }
+
+        .logo-area { display: flex; align-items: center; gap: 12px; min-width: 250px; flex-shrink: 0; }
+        .logo-main { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; }
+        .logo-sub { font-family: 'Lato', sans-serif; font-size: 0.6rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; }
+        
+        .navbar { margin-left: auto; }
+        .nav-list { display: flex; align-items: center; gap: 35px; }
+        .nav-link { font-weight: 600; font-size: 0.9rem; color: var(--navy-royal); text-transform: uppercase; padding: 30px 0; position: relative; cursor: pointer; }
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+        .nav-link::after { content: ''; position: absolute; bottom: 25px; left: 0; width: 0; height: 2px; background: var(--gold-prime); transition: width 0.3s ease; }
+        
+        .btn-header {
+            background: transparent; color: var(--navy-royal); padding: 10px 24px;
+            font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+            border: 2px solid var(--gold-prime); border-radius: 2px; transition: all 0.3s ease;
+        }
+        .btn-header:hover { background: var(--gold-prime); color: var(--white); transform: translateY(-1px); }
+
+        /* Dropdowns */
+        .has-dropdown { position: relative; }
+        .mega-menu {
+            position: absolute; top: 100%; left: -20px; background: var(--white); width: 260px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12); opacity: 0; visibility: hidden;
+            transform: translateY(15px); transition: all 0.3s; border-top: 4px solid var(--gold-prime); padding: 10px 0;
+        }
+        .has-dropdown:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .mega-menu ul { display: block !important; padding: 0; margin: 0; }
+        .mega-menu li { display: block !important; width: 100%; border-bottom: 1px solid #f2f2f2; }
+        .mega-menu li:last-child { border-bottom: none; }
+        .mega-menu a { display: block !important; padding: 14px 25px; color: #555; font-size: 0.9rem; transition: all 0.2s; }
+        .mega-menu a:hover { background-color: #fafafa; color: var(--navy-royal); padding-left: 30px; border-left: 3px solid var(--gold-prime); }
+
+        /* PAGE SPECIFIC: LINKS HERO */
+        .links-hero {
+            position: relative; height: 50vh;
+            background: linear-gradient(rgba(2, 13, 23, 0.9), rgba(2, 13, 23, 0.8)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
+        }
+        .links-hero h1 { font-size: 3.5rem; color: #fff; margin-bottom: 15px; text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+        .links-hero .lead { font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-prime); font-weight: 700; display: block; margin-bottom: 10px; }
+        .hero-desc { font-size: 1.1rem; max-width: 700px; margin: 0 auto; color: #f0f0f0; opacity: 0.9; }
+
+        /* SEARCH UTILITY BAR */
+        .search-container {
+            margin-top: -40px; position: relative; z-index: 10;
+            max-width: 900px; margin-left: auto; margin-right: auto;
+            background: #fff; padding: 30px; border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex; gap: 20px; align-items: center;
+            border-top: 4px solid var(--gold-prime);
+        }
+        .search-input {
+            flex: 1; padding: 15px 20px; border: 1px solid #ddd; border-radius: 2px;
+            font-size: 1rem; color: var(--text-dark); transition: all 0.3s;
+        }
+        .search-input:focus { border-color: var(--navy-royal); outline: none; box-shadow: 0 0 10px rgba(10, 37, 64, 0.1); }
+        .print-btn {
+            background: var(--grey-light); color: var(--navy-royal); padding: 15px 25px;
+            border: 1px solid #ddd; font-weight: 600; cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .print-btn:hover { background: var(--navy-royal); color: #fff; }
+
+        /* RESOURCE GRID */
+        .resource-section { padding: 80px 0 120px; background: var(--grey-light); }
+        .resource-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px; }
+        
+        .resource-category {
+            background: #fff; padding: 40px; border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03); transition: all 0.3s;
+            border: 1px solid #eee;
+        }
+        .resource-category:hover {
+            transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-top: 3px solid var(--gold-prime);
+        }
+
+        .category-header { display: flex; align-items: center; margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .category-icon { font-size: 1.8rem; color: var(--gold-prime); margin-right: 15px; }
+        .category-title { font-size: 1.5rem; color: var(--navy-royal); margin: 0; }
+
+        .link-list { list-style: none; padding: 0; }
+        .link-item { margin-bottom: 20px; }
+        .link-item:last-child { margin-bottom: 0; }
+        
+        .resource-link {
+            font-size: 1.1rem; color: var(--navy-royal); font-weight: 700;
+            text-decoration: none; display: flex; align-items: center; justify-content: space-between;
+            transition: color 0.2s;
+        }
+        .resource-link:hover { color: var(--gold-prime); }
+        .resource-link i { font-size: 0.8rem; opacity: 0.5; }
+        
+        .link-desc { font-size: 0.9rem; color: #666; margin-top: 5px; line-height: 1.5; }
+
+        /* TITAN FOOTER STYLES */
+        .titan-footer {
+            background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; position: relative; z-index: 10;
+        }
+        .footer-cta { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
+        .cta-text h3 { color: #fff; font-size: 2rem; margin-bottom: 5px; }
+        .cta-text p { color: var(--gold-prime); font-size: 1.1rem; margin: 0; }
+        .footer-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); margin-bottom: 60px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; margin-bottom: 20px; display: block; }
+        .brand-desc { line-height: 1.6; margin-bottom: 25px; opacity: 0.8; }
+        .social-links-footer { display: flex; gap: 15px; }
+        .social-links-footer a { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s; }
+        .social-links-footer a:hover { background: var(--gold-prime); border-color: var(--gold-prime); color: var(--navy-deep); }
+        .footer-col h4 { color: #fff; margin-bottom: 25px; font-size: 1.1rem; letter-spacing: 1px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { transition: all 0.3s; display: inline-block; }
+        .footer-links a:hover { color: var(--gold-prime); transform: translateX(5px); }
+        .contact-col p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; }
+        .contact-col i { color: var(--gold-prime); margin-top: 5px; }
+        .footer-bottom-row { background: rgba(0,0,0,0.2); padding: 30px 40px; border-radius: 4px 4px 0 0; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid var(--gold-prime); }
+        .newsletter-area { display: flex; align-items: center; gap: 20px; }
+        .newsletter-area span { color: #fff; font-weight: 700; }
+        .footer-form { display: flex; }
+        .footer-form input { padding: 12px 15px; border: none; outline: none; background: #fff; font-family: 'Lato', sans-serif; min-width: 250px; }
+        .footer-form button { background: var(--gold-prime); border: none; width: 50px; cursor: pointer; color: #fff; transition: 0.3s; font-size: 1.1rem; }
+        .footer-form button:hover { background: #fff; color: var(--navy-deep); }
+        .legal-links { font-size: 0.85rem; }
+        .legal-links a { color: #888; margin-left: 20px; transition: 0.3s; }
+        .legal-links a:hover { color: var(--gold-prime); }
+
+        @media (max-width: 900px) {
+            .resource-grid { grid-template-columns: 1fr; }
+            .search-container { flex-direction: column; width: 90%; }
+            .links-hero h1 { font-size: 2.5rem; }
+            .navbar { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-cta, .footer-bottom-row, .newsletter-area { flex-direction: column; text-align: center; gap: 20px; }
+        }
+        @media print {
+            .main-header, .links-hero, .search-container, .titan-footer { display: none; }
+            .resource-section { padding: 0; background: #fff; }
+            .resource-grid { grid-template-columns: 1fr; gap: 20px; }
+            .resource-category { box-shadow: none; border: 1px solid #000; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-snippets">
+                <span><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</span>
+                <span><i class="fas fa-phone-alt"></i> +91-8126828661</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="header">
+        <div class="container">
+            <div class="logo-area">
+                <i class="fas fa-balance-scale" style="font-size: 2.2rem; color: var(--navy-royal); margin-right: 15px;"></i>
+                <div class="logo-text-group">
+                    <span class="logo-main">A. Sharma & Co.</span>
+                    <span class="logo-sub">Legal Consultants</span>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    
+                    <li class="has-dropdown">
+                        <span class="nav-link" onclick="return false;">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
+                        <ul class="mega-menu">
+                            <li><a href="heritage.html">Our Heritage</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <span class="nav-link" onclick="return false;">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
+                        <ul class="mega-menu" style="width: 300px;">
+                            <li><a href="service-corporate.html">Corporate Governance</a></li>
+                            <li><a href="service-taxation.html">Taxation & GST</a></li>
+                            <li><a href="service-fema.html">FEMA & RBI</a></li>
+                            <li><a href="service-nclt.html">Litigation</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="links.html">Useful Links</a></li>
+                    <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
+                    <li><a href="contact.html" class="btn-header">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="links-hero">
+        <div class="container">
+            <span class="lead">Regulatory Intelligence</span>
+            <h1>Resource & Knowledge Hub</h1>
+            <p class="hero-desc">Direct access to critical government portals, judicial bodies, and compliance registries used by our experts.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="linkSearch" class="search-input" placeholder="Search resources (e.g., 'GST', 'MCA', 'Tribunal')...">
+            <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i> Print List</button>
+        </div>
+    </div>
+
+    <section class="resource-section">
+        <div class="container">
+            <div class="resource-grid">
+                
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-gavel category-icon"></i>
+                        <h3 class="category-title">Corporate Governance</h3>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item">
+                            <a href="https://www.mca.gov.in/" target="_blank" class="resource-link">Ministry of Corporate Affairs <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Official portal for company incorporation, ROC filings, and compliance data.</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://nclt.gov.in/" target="_blank" class="resource-link">National Company Law Tribunal <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Judicial body for insolvency resolution and corporate disputes.</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.sebi.gov.in/" target="_blank" class="resource-link">SEBI <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Regulator for securities markets and listed entities.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-file-invoice-dollar category-icon"></i>
+                        <h3 class="category-title">Taxation & Finance</h3>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item">
+                            <a href="https://www.incometax.gov.in/" target="_blank" class="resource-link">Income Tax Department <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Portal for ITR filing, TDS, and tax assessments.</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.gst.gov.in/" target="_blank" class="resource-link">GST Portal <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Goods and Services Tax registration and return filing system.</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.cbic.gov.in/" target="_blank" class="resource-link">CBIC <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Central Board of Indirect Taxes and Customs.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-globe category-icon"></i>
+                        <h3 class="category-title">Banking & FEMA</h3>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item">
+                            <a href="https://www.rbi.org.in/" target="_blank" class="resource-link">Reserve Bank of India (RBI) <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Regulator for monetary policy and Foreign Exchange (FEMA).</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.ibbi.gov.in/" target="_blank" class="resource-link">IBBI <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Insolvency and Bankruptcy Board of India.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-book category-icon"></i>
+                        <h3 class="category-title">Legal Research</h3>
+                    </div>
+                    <ul class="link-list">
+                        <li class="link-item">
+                            <a href="https://www.indiacode.nic.in/" target="_blank" class="resource-link">India Code <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Digital repository of all Central and State Acts.</p>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://egazette.nic.in/" target="_blank" class="resource-link">The Gazette of India <i class="fas fa-external-link-alt"></i></a>
+                            <p class="link-desc">Official notifications and public notices.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="titan-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="cta-text">
+                    <h3>Ready to Engineer Your Growth?</h3>
+                    <p>Partner with India's premier corporate legal strategists.</p>
+                </div>
+                <a href="contact.html" class="btn btn-gold">Schedule Consultation</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">A. SHARMA & CO.</a>
+                    <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
+                    <div class="social-links-footer">
+                        <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>The Firm</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Our Heritage</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Expertise</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-corporate.html">Corporate Law</a></li>
+                        <li><a href="service-taxation.html">Taxation & GST</a></li>
+                        <li><a href="service-fema.html">FEMA Advisory</a></li>
+                        <li><a href="service-nclt.html">Dispute Resolution</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh (India)</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-9557513775</p>
+                    <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="newsletter-area">
+                    <span>Subscribe to Legal Insights:</span>
+                    <form onsubmit="subscribeNewsletter(event)" class="footer-form">
+                        <input type="email" id="news-email" placeholder="Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="legal-links">
+                    <span>&copy; 2025 A. Sharma & Co.</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Engagement</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Header Scroll Logic
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.style.height = '75px';
+                    header.style.top = '46px';
+                } else {
+                    header.style.height = '90px';
+                    header.style.top = '46px';
+                }
+            });
+
+            // Search Filter
+            const searchInput = document.getElementById('linkSearch');
+            const items = document.querySelectorAll('.link-item');
+            const categories = document.querySelectorAll('.resource-category');
+
+            searchInput.addEventListener('keyup', function(e) {
+                const term = e.target.value.toLowerCase();
+
+                items.forEach(item => {
+                    const title = item.querySelector('a').innerText.toLowerCase();
+                    const desc = item.querySelector('p').innerText.toLowerCase();
+                    
+                    if(title.includes(term) || desc.includes(term)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Hide empty categories
+                categories.forEach(cat => {
+                    const visibleItems = cat.querySelectorAll('.link-item[style="display: block;"]');
+                    const allItems = cat.querySelectorAll('.link-item');
+                    // If filtering is active check visibility, otherwise show all
+                    if(term !== '') {
+                        let hasVisible = false;
+                        allItems.forEach(i => {
+                            if(i.style.display !== 'none') hasVisible = true;
+                        });
+                        cat.style.display = hasVisible ? 'block' : 'none';
+                    } else {
+                        cat.style.display = 'block';
+                        allItems.forEach(i => i.style.display = 'block');
+                    }
+                });
+            });
+        });
+
+        // Newsletter Logic
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            var email = document.getElementById('news-email').value;
+            if(email) {
+                alert("Thank you for subscribing! You will receive legal updates at " + email);
+                document.getElementById('news-email').value = "";
+            }
+        }
+    </script>
+</body>
+</html>
