@@ -10,17 +10,17 @@
   gtag('config', 'G-01YJ2ZVMQW');
 </script>
 <link rel="icon" type="image/png" href="favicon.png">
-<title>Contact A. Sharma & Co. | Corporate Lawyers in Noida & Delhi NCR</title>
+<title>Contact Avnish S & Associates | Corporate Lawyers in Noida & Delhi NCR</title>
 <meta name="description" content="Schedule a confidential consultation with top corporate legal experts in Noida. Reach us via WhatsApp, Email, or Visit our office for NCLT, FEMA, and Tax matters.">
 <meta name="keywords" content="Contact Corporate Lawyer, Law Firm Noida Address, Legal Consultation Delhi NCR, CS Avnish Sharma Contact, Best Corporate Advocates">
 
-<meta property="og:title" content="Book a Legal Consultation | A. Sharma & Co.">
+<meta property="og:title" content="Book a Legal Consultation |Avnish S & Associates">
 <meta property="og:description" content="Ready to solve your legal challenges? Connect with our experts today.">
 <meta property="og:url" content="https://www.asharmaco.com/contact.html">
 <meta property="og:image" content="https://www.asharmaco.com/images/social-preview.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | A. Sharma & Co.</title>
+    <title>Contact Us | Avnish S & Associates</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -263,57 +263,346 @@
 </head>
 <body>
 
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-snippets">
-                <span><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</span>
-                <span><i class="fas fa-phone-alt"></i> +91-8126828661</span>
+    <style>
+    :root {
+        --nav-navy: #030d17;
+        --nav-gold: #c8a165;
+        --nav-white: #ffffff;
+        --nav-text-dark: #1a1a1a;
+        --nav-gray: #96a1af;
+    }
+
+    /* Sticky Wrapper */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+    }
+
+    /* 1. TOP BAR STYLES */
+    .exact-top-bar {
+        background-color: var(--nav-navy);
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .top-bar-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-contact-info { display: flex; gap: 30px; }
+    .top-contact-info a {
+        color: var(--nav-gray);
+        font-family: 'Lato', sans-serif;
+        font-size: 0.85rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s;
+    }
+    .top-contact-info a:hover { color: var(--nav-white); }
+    .top-contact-info i { color: var(--nav-gold); font-size: 0.95rem; }
+    
+    .top-socials { display: flex; gap: 12px; }
+    .top-socials a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        color: var(--nav-gray);
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 0.8rem;
+    }
+    .top-socials a:hover { border-color: var(--nav-gold); color: var(--nav-gold); }
+
+    /* 2. MAIN NAV STYLES */
+    .main-nav-bar {
+        background-color: var(--nav-white);
+        height: 85px;
+        display: flex;
+        align-items: center;
+        transition: height 0.3s ease;
+    }
+    .nav-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Logo */
+    .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-logo i { font-size: 2.2rem; color: var(--nav-navy); }
+    .brand-text { display: flex; flex-direction: column; }
+    .brand-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6rem;
+        color: var(--nav-navy);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+    }
+    .brand-subtitle {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.65rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 700;
+        margin-top: 2px;
+    }
+
+    /* Menu Links */
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu li { position: relative; }
+    .nav-link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: var(--nav-navy);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 30px 0;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .nav-link:hover, .nav-link.active { color: var(--nav-gold); }
+    
+    /* Dropdown (Mega Menu) */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        background: var(--nav-white);
+        min-width: 240px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+        transition: all 0.3s ease;
+        border-top: 3px solid var(--nav-gold);
+        list-style: none;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    .has-dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    .dropdown-menu li { padding: 0; }
+    .dropdown-menu a {
+        display: block;
+        padding: 12px 25px;
+        color: var(--nav-text-dark);
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .dropdown-menu a:hover {
+        background-color: rgba(200, 161, 101, 0.05);
+        color: var(--nav-gold);
+        padding-left: 32px;
+    }
+
+    /* FIX: Clean Contact Us Button */
+    .btn-contact {
+        display: inline-block;
+        padding: 10px 24px;
+        border: 2px solid var(--nav-gold);
+        color: var(--nav-navy);
+        font-family: 'Lato', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        background: transparent;
+        transition: 0.3s;
+        border-radius: 2px;
+        margin-left: 10px;
+    }
+    .btn-contact:hover {
+        background: var(--nav-gold);
+        color: var(--nav-white);
+    }
+
+    /* Mobile Hamburger */
+    .hamburger-icon {
+        display: none;
+        font-size: 1.5rem;
+        color: var(--nav-navy);
+        cursor: pointer;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+        .top-contact-info { display: none; } /* Hide email/phone on mobile to save space */
+        .top-bar-inner { justify-content: flex-end; }
+        
+        .hamburger-icon { display: block; }
+        
+        .nav-menu {
+            position: absolute;
+            top: 85px;
+            left: -100%;
+            width: 100%;
+            background: var(--nav-white);
+            flex-direction: column;
+            gap: 0;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            transition: 0.4s ease;
+            text-align: left;
+            padding-bottom: 20px;
+        }
+        .nav-menu.active { left: 0; }
+        .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
+        .nav-link { display: block; padding: 15px 20px; }
+        
+        .dropdown-menu {
+            position: relative;
+            top: 0; left: 0;
+            width: 100%;
+            box-shadow: none;
+            border-top: none;
+            opacity: 1; visibility: visible; transform: none;
+            display: none;
+            background: #f9f9f9;
+        }
+        .has-dropdown.open .dropdown-menu { display: block; }
+        .btn-contact { margin: 20px; text-align: center; }
+    }
+</style>
+
+<header class="site-header" id="mainHeader">
+    <div class="exact-top-bar">
+        <div class="top-bar-inner">
+            <div class="top-contact-info">
+                <a href="mailto:csavnishsharma@gmail.com"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
+                <a href="tel:+918126828661"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
+            <div class="top-socials">
+                <a href="https://www.linkedin.com/company/law-wheels-services-llp/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </div>
 
-    <header class="main-header" id="header">
-        <div class="container">
-            <div class="logo-area">
-                <i class="fas fa-balance-scale" style="font-size: 2.2rem; color: var(--navy-royal); margin-right: 15px;"></i>
-                <div class="logo-text-group">
-                    <span class="logo-main">A. Sharma & Co.</span>
-                    <span class="logo-sub">Legal Consultants</span>
+    <div class="main-nav-bar" id="navBar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand-logo">
+                <i class="fas fa-balance-scale"></i>
+                <div class="brand-text">
+                    <span class="brand-title">Avnish S & Associates</span>
+                    <span class="brand-subtitle">Legal Consultants</span>
                 </div>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                
+                <li class="has-dropdown">
+                    <span class="nav-link">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="heritage.html">Our Heritage</a></li>
+                        <li><a href="leadership.html">Leadership Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <span class="nav-link">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                    <ul class="dropdown-menu">
+                        <li><a href="service-corporate.html">Corporate Governance</a></li>
+                        <li><a href="service-taxation.html">Taxation & GST</a></li>
+                        <li><a href="service-fema.html">FEMA & RBI</a></li>
+                        <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="links.html" class="nav-link">Useful Links</a></li>
+                <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
+                
+                <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+            </ul>
+
+            <div class="hamburger-icon" id="hamburgerBtn">
+                <i class="fas fa-bars"></i>
             </div>
-
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="has-dropdown">
-                        <span class="nav-link" onclick="return false;">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
-                        <ul class="mega-menu">
-                            <li><a href="heritage.html">Our Heritage</a></li>
-                            <li><a href="leadership.html">Leadership Team</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">
-                        <span class="nav-link" onclick="return false;">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem;"></i></span>
-                        <ul class="mega-menu" style="width: 300px;">
-                            <li><a href="service-corporate.html">Corporate Governance</a></li>
-                            <li><a href="service-taxation.html">Taxation & GST</a></li>
-                            <li><a href="service-fema.html">FEMA & RBI</a></li>
-                            <li><a href="service-nclt.html">Litigation</a></li>
-                        </ul>
-                    </li>
-<li><a href="links.html" class="nav-link">Useful Links</a></li>
-                    <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
-                    <li><a href="contact.html" class="btn-header">Contact Us</a></li>
-                </ul>
-            </nav>
         </div>
+    </div>
+</header>
 
-    </header>
+<script>
+    // 1. Header Shrink Effect on Scroll
+    const mainHeader = document.getElementById('mainHeader');
+    const navBar = document.getElementById('navBar');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navBar.style.height = '70px'; // Shrinks navbar
+            mainHeader.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+        } else {
+            navBar.style.height = '85px'; // Original size
+            mainHeader.style.boxShadow = '0 4px 15px rgba(0,0,0,0.05)';
+        }
+    });
+
+    // 2. Mobile Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    
+    hamburgerBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        // Change icon from bars to X
+        const icon = hamburgerBtn.querySelector('i');
+        if(navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // 3. Mobile Dropdown Toggle
+    const dropdowns = document.querySelectorAll('.has-dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            // Only trigger on mobile view
+            if(window.innerWidth <= 992) {
+                // Prevent linking if they click the main span
+                if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
+                    this.classList.toggle('open');
+                }
+            }
+        });
+    });
+</script>
 
     <section class="contact-hero">
         <div class="container">
@@ -373,7 +662,7 @@
                     <div class="info-card">
                         <i class="fas fa-map-marker-alt info-icon"></i>
                         <h4>Office Headquarters</h4>
-                        <p>Noida, Uttar Pradesh (India)</p>
+                        <p>Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
                         <p style="font-size:0.85rem; color:#888; margin-top:5px;">*Visits by Appointment Only*</p>
                     </div>
                 </div>
@@ -406,7 +695,7 @@
 
             <div class="footer-grid">
                 <div class="footer-col brand-col">
-                    <a href="index.html" class="footer-logo">A. SHARMA & CO.</a>
+                    <a href="index.html" class="footer-logo">Avnish S & Associates</a>
                     <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
                     <div class="social-links-footer">
                         <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
@@ -437,7 +726,7 @@
 
                 <div class="footer-col contact-col">
                     <h4>Contact</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Noida, Uttar Pradesh (India)</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
                     <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
                     <p><i class="fas fa-phone-alt"></i> +91-9557513775</p>
                     <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
@@ -453,7 +742,7 @@
                     </form>
                 </div>
                 <div class="legal-links">
-                    <span>&copy; 2025 A. Sharma & Co.</span>
+                    <span>&copy; 2025 Avnish S & Associates</span>
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Engagement</a>
                     <a href="disclaimer.html">Disclaimer</a>
