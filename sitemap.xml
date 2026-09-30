@@ -1,61 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.asharmaco.com/index.html</loc>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/heritage.html</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/leadership.html</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/careers.html</loc>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/contact.html</loc>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/links.html</loc>
-        <priority>0.60</priority>
-    </url>
+<!-- PREMIUM LEGAL TECH TOOLS (High Priority for Traffic) -->
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/fdi-calculator.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+</url>
 
-    <url>
-        <loc>https://www.asharmaco.com/services.html</loc>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/service-corporate.html</loc>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/service-taxation.html</loc>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/service-fema.html</loc>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/service-nclt.html</loc>
-        <priority>0.85</priority>
-    </url>
+<!-- MAIN PRACTICE AREAS (High Business Value) -->
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/service-corporate.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/service-taxation.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/service-fema.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/service-nclt.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+</url>
 
-    <url>
-        <loc>https://www.asharmaco.com/privacy.html</loc>
-        <priority>0.50</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/terms.html</loc>
-        <priority>0.50</priority>
-    </url>
-    <url>
-        <loc>https://www.asharmaco.com/disclaimer.html</loc>
-        <priority>0.50</priority>
-    </url>
-</urlset>
+<!-- FIRM PROFILE & OTHERS -->
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/heritage.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/leadership.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/careers.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+</url>
+<url>
+    <loc>https://avnish.lawwheelsservices.co.in/links.html</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+</url>
+
+<!-- NOTE: Legal pages (Privacy, Terms, Disclaimer) and 404.html are intentionally omitted.
+     Including 'noindex' pages in a sitemap triggers Google Search Console errors. -->
