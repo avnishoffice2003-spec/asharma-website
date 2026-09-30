@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-01YJ2ZVMQW');
-</script>
-<link rel="icon" type="image/png" href="favicon.png">
-<title>Contact Avnish S & Associates | Corporate Lawyers in Noida & Delhi NCR</title>
-<meta name="description" content="Schedule a confidential consultation with top corporate legal experts in Noida. Reach us via WhatsApp, Email, or Visit our office for NCLT, FEMA, and Tax matters.">
-<meta name="keywords" content="Contact Corporate Lawyer, Law Firm Noida Address, Legal Consultation Delhi NCR, CS Avnish Sharma Contact, Best Corporate Advocates">
-
-<meta property="og:title" content="Book a Legal Consultation |Avnish S & Associates">
-<meta property="og:description" content="Ready to solve your legal challenges? Connect with our experts today.">
-<meta property="og:url" content="https://www.asharmaco.com/contact.html">
-<meta property="og:image" content="https://www.asharmaco.com/images/social-preview.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Avnish S & Associates</title>
+    
+    <!-- ADVANCED SEO & TARGETING META TAGS -->
+    <title>Contact Us | Corporate Legal Strategists | Avnish S & Associates</title>
+    <meta name="description" content="Schedule a confidential consultation with top corporate legal experts. Reach us securely for NCLT, FEMA, Corporate Governance, and Taxation matters.">
+    <meta name="keywords" content="Contact Corporate Lawyer, Law Firm Noida Address, Legal Consultation Delhi NCR, CS Avnish Sharma Contact, Best Corporate Advocates">
+    <meta name="author" content="Avnish S & Associates">
+    
+    <!-- OPEN GRAPH (Social Media & AI Context) -->
+    <meta property="og:title" content="Book a Confidential Legal Consultation | Avnish S & Associates">
+    <meta property="og:description" content="Ready to solve your complex corporate legal challenges? Connect with our premium legal desk today.">
+    <meta property="og:url" content="https://www.asharmaco.com/contact.html">
+    <meta property="og:image" content="https://www.asharmaco.com/images/social-preview.jpg">
+    <meta property="og:type" content="website">
+    
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Avnish S & Associates">
+    <meta name="twitter:description" content="Secure your corporate legacy. Connect with our experts.">
+
+    <!-- SECURITY HEADERS (Basic CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com https://www.googletagmanager.com https://images.unsplash.com;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-01YJ2ZVMQW');
+    </script>
+    <link rel="icon" type="image/png" href="favicon.png">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
 
     <style>
         /* =========================================
@@ -42,6 +53,8 @@
             --grey-light: #f9fafb;
             --text-dark: #1a1a1a;
             --transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-subtle: 0 4px 15px rgba(0,0,0,0.05);
+            --shadow-hover: 0 15px 35px rgba(0,0,0,0.1);
         }
 
         html { scroll-behavior: smooth; }
@@ -55,86 +68,66 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-            color: var(--navy-royal);
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; color: var(--navy-royal); margin-bottom: 15px; font-weight: 700; }
         a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition); }
         ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
         .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
 
-        /* HEADER ARCHITECTURE (TITAN VERSION) */
-        .top-bar {
-            background-color: var(--navy-deep); color: #b0b0b0; padding: 10px 0;
-            font-size: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.05);
-            position: sticky; top: 0; z-index: 1100; border-bottom: 2px solid var(--gold-prime);
-        }
-        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
-        .contact-snippets span { margin-right: 25px; }
-        .contact-snippets i { color: var(--gold-prime); margin-right: 8px; }
-        .social-links a { color: #b0b0b0; margin-left: 20px; }
-        .social-links a:hover { color: var(--gold-prime); }
+        .btn { display: inline-block; padding: 14px 32px; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 2px; cursor: pointer; transition: all 0.3s var(--transition); border: 2px solid transparent; }
+        .btn-gold { background-color: var(--gold-prime); color: var(--white); box-shadow: 0 4px 10px rgba(197, 160, 89, 0.2); }
+        .btn-gold:hover { background-color: var(--navy-royal); color: var(--white); transform: translateY(-2px); }
 
-        .main-header {
-            background: var(--white); height: 90px; display: flex; align-items: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: sticky; top: 46px; z-index: 1000;
-            border-bottom: 4px solid var(--gold-prime); transition: height 0.3s ease;
-        }
+        /* =========================================
+           NAVBAR (Consolidated & Semantic)
+           ========================================= */
+        .site-header { position: sticky; top: 0; z-index: 9999; width: 100%; box-shadow: var(--shadow-subtle); transition: all 0.3s ease; background: var(--white); }
+        .exact-top-bar { background-color: var(--navy-deep); padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: flex-end; align-items: center; }
+        .top-contact-info { display: flex; gap: 30px; margin-right: 20px; }
+        .top-contact-info a { color: #96a1af; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition: 0.3s; font-weight: 700;}
+        .top-contact-info a:hover { color: var(--white); }
+        .top-contact-info i { color: var(--gold-prime); }
         
-        /* Spacing Fix */
-        .main-header .container {
-            display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 50px;
-        }
-
-        .logo-area { display: flex; align-items: center; gap: 12px; min-width: 250px; flex-shrink: 0; }
-        .logo-main { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; }
-        .logo-sub { font-family: 'Lato', sans-serif; font-size: 0.6rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; display: block; }
+        .main-nav-bar { height: 85px; display: flex; align-items: center; transition: height 0.3s ease; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
         
-        .navbar { margin-left: auto; }
-        .nav-list { display: flex; align-items: center; gap: 35px; }
-        .nav-link { font-weight: 600; font-size: 0.9rem; color: var(--navy-royal); text-transform: uppercase; padding: 30px 0; position: relative; cursor: pointer; }
-        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-        .nav-link::after { content: ''; position: absolute; bottom: 25px; left: 0; width: 0; height: 2px; background: var(--gold-prime); transition: width 0.3s ease; }
+        .brand-logo { display: flex; align-items: center; gap: 12px; }
+        .brand-logo i { font-size: 2.2rem; color: var(--navy-royal); }
+        .brand-text { display: flex; flex-direction: column; }
+        .brand-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.1; }
+        .brand-subtitle { font-family: 'Lato', sans-serif; font-size: 0.65rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; margin-top: 2px; }
+
+        .nav-menu { display: flex; align-items: center; gap: 30px; }
+        .nav-menu li { position: relative; }
+        .nav-link { font-weight: 700; font-size: 0.85rem; color: var(--navy-royal); text-transform: uppercase; letter-spacing: 0.5px; padding: 30px 0; cursor: pointer; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--gold-prime); }
         
-        .btn-header {
-            background: transparent; color: var(--navy-royal); padding: 10px 24px;
-            font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
-            border: 2px solid var(--gold-prime); border-radius: 2px; transition: all 0.3s ease;
-        }
-        .btn-header:hover { background: var(--gold-prime); color: var(--white); transform: translateY(-1px); }
+        .dropdown-menu { position: absolute; top: 100%; left: -20px; background: var(--white); min-width: 240px; box-shadow: var(--shadow-hover); opacity: 0; visibility: hidden; transform: translateY(15px); transition: all 0.3s ease; border-top: 3px solid var(--gold-prime); padding: 10px 0; z-index: 1000; }
+        .has-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu a { display: block; padding: 12px 25px; color: var(--text-dark); font-size: 0.9rem; transition: 0.3s; }
+        .dropdown-menu a:hover { background-color: rgba(197, 160, 89, 0.05); color: var(--gold-prime); padding-left: 32px; }
+        
+        .btn-contact { display: inline-block; padding: 10px 24px; border: 2px solid var(--gold-prime); color: var(--navy-royal); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-left: 10px; }
+        .btn-contact:hover { background: var(--gold-prime); color: var(--white); }
+        .hamburger-icon { display: none; font-size: 1.5rem; color: var(--navy-royal); cursor: pointer; }
 
-        /* Dropdowns */
-        .has-dropdown { position: relative; }
-        .mega-menu {
-            position: absolute; top: 100%; left: -20px; background: var(--white); width: 260px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12); opacity: 0; visibility: hidden;
-            transform: translateY(15px); transition: all 0.3s; border-top: 4px solid var(--gold-prime); padding: 10px 0;
-        }
-        .has-dropdown:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-        .mega-menu ul { display: block !important; padding: 0; margin: 0; }
-        .mega-menu li { display: block !important; width: 100%; border-bottom: 1px solid #f2f2f2; }
-        .mega-menu li:last-child { border-bottom: none; }
-        .mega-menu a { display: block !important; padding: 14px 25px; color: #555; font-size: 0.9rem; transition: all 0.2s; }
-        .mega-menu a:hover { background-color: #fafafa; color: var(--navy-royal); padding-left: 30px; border-left: 3px solid var(--gold-prime); }
-
-        /* PAGE SPECIFIC: CONTACT HERO */
+        /* =========================================
+           PAGE SPECIFIC: CONTACT
+           ========================================= */
         .contact-hero {
             position: relative; height: 50vh;
             background: linear-gradient(rgba(2, 13, 23, 0.9), rgba(2, 13, 23, 0.8)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1600&q=80');
             background-size: cover; background-position: center;
             display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
         }
-        .contact-hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 15px; color: #fff; text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
-        .contact-hero .lead { font-family: 'Lato', sans-serif; font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-prime); font-weight: 700; margin-bottom: 10px; display: block; }
+        .contact-hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: #fff; text-shadow: 0 4px 30px rgba(0,0,0,0.8); }
+        .contact-hero .lead { font-size: 1.1rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-prime); font-weight: 700; margin-bottom: 10px; display: block; }
         
-        /* CONTACT LAYOUT */
         .contact-section { padding: 100px 0; background: var(--white); }
         .contact-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; }
 
-        /* The Form */
         .form-wrapper { background: #fff; padding: 0; }
         .form-header { margin-bottom: 30px; }
         .form-header h2 { font-size: 2.5rem; color: var(--navy-royal); margin-bottom: 10px; }
@@ -147,7 +140,7 @@
             border-radius: 2px; font-size: 1rem; color: var(--text-dark); transition: all 0.3s;
             font-family: 'Lato', sans-serif;
         }
-        input:focus, textarea:focus {
+        input:focus, textarea:focus, select:focus {
             border-color: var(--navy-royal); outline: none; background: #fff;
             box-shadow: 0 0 0 3px rgba(10, 37, 64, 0.05); border-left: 4px solid var(--gold-prime);
         }
@@ -159,20 +152,18 @@
             border: none; border-radius: 2px; cursor: pointer; transition: all 0.3s;
             display: flex; align-items: center; justify-content: center; gap: 10px;
         }
-        .btn-submit:hover { background: #25D366; color: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .btn-submit:hover { background: #25D366; color: #fff; transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
-        /* Info Cards */
         .info-wrapper { display: flex; flex-direction: column; gap: 30px; }
         .info-card {
             background: var(--grey-light); padding: 30px; border-left: 4px solid var(--gold-prime);
             transition: all 0.3s;
         }
-        .info-card:hover { transform: translateX(10px); background: #fff; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        .info-card:hover { transform: translateX(10px); background: #fff; box-shadow: var(--shadow-subtle); }
         .info-icon { font-size: 1.5rem; color: var(--navy-royal); margin-bottom: 15px; }
         .info-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 10px; color: var(--navy-royal); }
         .info-card p { color: #555; font-size: 0.95rem; margin-bottom: 5px; }
         
-        /* Confidentiality Banner (Separated) */
         .trust-banner {
             background: var(--navy-deep); color: #fff; padding: 60px 0; margin-top: 80px;
             display: flex; align-items: center; justify-content: center; gap: 30px; text-align: left;
@@ -182,10 +173,10 @@
         .trust-text h3 { font-family: 'Playfair Display'; font-size: 1.8rem; margin-bottom: 5px; color: #fff; }
         .trust-text p { color: #aaa; max-width: 500px; }
 
-        /* TITAN FOOTER STYLES */
-        .titan-footer {
-            background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; position: relative; z-index: 10;
-        }
+        /* =========================================
+           FOOTER (Consolidated)
+           ========================================= */
+        .titan-footer { background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; }
         .footer-cta { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
         .cta-text h3 { color: #fff; font-size: 2rem; margin-bottom: 5px; }
         .cta-text p { color: var(--gold-prime); font-size: 1.1rem; margin: 0; }
@@ -212,37 +203,52 @@
         .legal-links { font-size: 0.85rem; }
         .legal-links a { color: #888; margin-left: 20px; transition: 0.3s; }
         .legal-links a:hover { color: var(--gold-prime); }
+        .fab-wa { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); z-index: 900; transition: var(--transition); }
+        .fab-wa:hover { transform: scale(1.1); }
 
-        @media (max-width: 900px) {
+        @media (max-width: 992px) {
+            .top-contact-info { display: none; }
+            .hamburger-icon { display: block; }
+            .nav-menu { position: absolute; top: 85px; left: -100%; width: 100%; background: var(--white); flex-direction: column; gap: 0; box-shadow: 0 10px 15px rgba(0,0,0,0.1); transition: 0.4s ease; text-align: left; padding-bottom: 20px; }
+            .nav-menu.active { left: 0; }
+            .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
+            .nav-link { display: block; padding: 15px 20px; }
+            .dropdown-menu { position: relative; top: 0; left: 0; width: 100%; box-shadow: none; border-top: none; opacity: 1; visibility: visible; transform: none; display: none; background: #f9f9f9; }
+            .has-dropdown.open .dropdown-menu { display: block; }
+            .btn-contact { margin: 20px; text-align: center; }
+            
             .contact-grid { grid-template-columns: 1fr; }
-            .navbar { display: none; }
             .trust-banner { flex-direction: column; text-align: center; padding: 40px 20px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
             .footer-cta, .footer-bottom-row, .newsletter-area { flex-direction: column; text-align: center; gap: 20px; }
         }
+        @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
     </style>
+
+<!-- ADVANCED LOCAL ENTERPRISE SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "name": "A. Sharma & Co.",
+  "name": "Avnish S & Associates",
   "image": "https://www.asharmaco.com/images/social-preview.jpg",
   "@id": "https://www.asharmaco.com",
   "url": "https://www.asharmaco.com",
   "telephone": "+91-8126828661",
   "email": "csavnishsharma@gmail.com",
+  "areaServed": ["Noida", "Delhi NCR", "India"],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Noida, Uttar Pradesh",
+    "streetAddress": "Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West",
     "addressLocality": "Noida",
     "addressRegion": "UP",
-    "postalCode": "201301",
+    "postalCode": "201308",
     "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 28.5355,
-    "longitude": 77.3910
+    "latitude": 28.6148,
+    "longitude": 77.4411
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
@@ -257,438 +263,167 @@
     "opens": "09:00",
     "closes": "19:00"
   },
-  "priceRange": "$$"
+  "priceRange": "$$$"
 }
 </script>
 </head>
 <body>
 
-    <style>
-    :root {
-        --nav-navy: #030d17;
-        --nav-gold: #c8a165;
-        --nav-white: #ffffff;
-        --nav-text-dark: #1a1a1a;
-        --nav-gray: #96a1af;
-    }
-
-    /* Sticky Wrapper */
-    .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-        width: 100%;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-    }
-
-    /* 1. TOP BAR STYLES */
-    .exact-top-bar {
-        background-color: var(--nav-navy);
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .top-bar-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .top-contact-info { display: flex; gap: 30px; }
-    .top-contact-info a {
-        color: var(--nav-gray);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.85rem;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        transition: 0.3s;
-    }
-    .top-contact-info a:hover { color: var(--nav-white); }
-    .top-contact-info i { color: var(--nav-gold); font-size: 0.95rem; }
-    
-    .top-socials { display: flex; gap: 12px; }
-    .top-socials a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 26px;
-        height: 26px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        color: var(--nav-gray);
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 0.8rem;
-    }
-    .top-socials a:hover { border-color: var(--nav-gold); color: var(--nav-gold); }
-
-    /* 2. MAIN NAV STYLES */
-    .main-nav-bar {
-        background-color: var(--nav-white);
-        height: 85px;
-        display: flex;
-        align-items: center;
-        transition: height 0.3s ease;
-    }
-    .nav-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    
-    /* Logo */
-    .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .brand-logo i { font-size: 2.2rem; color: var(--nav-navy); }
-    .brand-text { display: flex; flex-direction: column; }
-    .brand-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.6rem;
-        color: var(--nav-navy);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        line-height: 1.1;
-    }
-    .brand-subtitle {
-        font-family: 'Lato', sans-serif;
-        font-size: 0.65rem;
-        color: #666;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 700;
-        margin-top: 2px;
-    }
-
-    /* Menu Links */
-    .nav-menu {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    .nav-menu li { position: relative; }
-    .nav-link {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 0.85rem;
-        color: var(--nav-navy);
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        padding: 30px 0;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .nav-link:hover, .nav-link.active { color: var(--nav-gold); }
-    
-    /* Dropdown (Mega Menu) */
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: -20px;
-        background: var(--nav-white);
-        min-width: 240px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(15px);
-        transition: all 0.3s ease;
-        border-top: 3px solid var(--nav-gold);
-        list-style: none;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-    .has-dropdown:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    .dropdown-menu li { padding: 0; }
-    .dropdown-menu a {
-        display: block;
-        padding: 12px 25px;
-        color: var(--nav-text-dark);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .dropdown-menu a:hover {
-        background-color: rgba(200, 161, 101, 0.05);
-        color: var(--nav-gold);
-        padding-left: 32px;
-    }
-
-    /* FIX: Clean Contact Us Button */
-    .btn-contact {
-        display: inline-block;
-        padding: 10px 24px;
-        border: 2px solid var(--nav-gold);
-        color: var(--nav-navy);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.85rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-decoration: none;
-        background: transparent;
-        transition: 0.3s;
-        border-radius: 2px;
-        margin-left: 10px;
-    }
-    .btn-contact:hover {
-        background: var(--nav-gold);
-        color: var(--nav-white);
-    }
-
-    /* Mobile Hamburger */
-    .hamburger-icon {
-        display: none;
-        font-size: 1.5rem;
-        color: var(--nav-navy);
-        cursor: pointer;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 992px) {
-        .top-contact-info { display: none; } /* Hide email/phone on mobile to save space */
-        .top-bar-inner { justify-content: flex-end; }
-        
-        .hamburger-icon { display: block; }
-        
-        .nav-menu {
-            position: absolute;
-            top: 85px;
-            left: -100%;
-            width: 100%;
-            background: var(--nav-white);
-            flex-direction: column;
-            gap: 0;
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            transition: 0.4s ease;
-            text-align: left;
-            padding-bottom: 20px;
-        }
-        .nav-menu.active { left: 0; }
-        .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
-        .nav-link { display: block; padding: 15px 20px; }
-        
-        .dropdown-menu {
-            position: relative;
-            top: 0; left: 0;
-            width: 100%;
-            box-shadow: none;
-            border-top: none;
-            opacity: 1; visibility: visible; transform: none;
-            display: none;
-            background: #f9f9f9;
-        }
-        .has-dropdown.open .dropdown-menu { display: block; }
-        .btn-contact { margin: 20px; text-align: center; }
-    }
-</style>
-
-<header class="site-header" id="mainHeader">
-    <div class="exact-top-bar">
-        <div class="top-bar-inner">
-            <div class="top-contact-info">
-                <a href="mailto:csavnishsharma@gmail.com"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
-                <a href="tel:+918126828661"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
-            </div>
-            <div class="top-socials">
-                <a href="https://www.linkedin.com/company/law-wheels-services-llp/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="main-nav-bar" id="navBar">
-        <div class="nav-inner">
-            <a href="index.html" class="brand-logo">
-                <i class="fas fa-balance-scale"></i>
-                <div class="brand-text">
-                    <span class="brand-title">Avnish S & Associates</span>
-                    <span class="brand-subtitle">Legal Consultants</span>
+    <!-- SEMANTIC HEADER -->
+    <header class="site-header" id="mainHeader">
+        <div class="exact-top-bar">
+            <div class="top-bar-inner">
+                <div class="top-contact-info">
+                    <a href="mailto:csavnishsharma@gmail.com" aria-label="Email Us"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
+                    <a href="tel:+918126828661" aria-label="Call Us"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
                 </div>
-            </a>
-
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                
-                <li class="has-dropdown">
-                    <span class="nav-link">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="heritage.html">Our Heritage</a></li>
-                        <li><a href="leadership.html">Leadership Team</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-dropdown">
-                    <span class="nav-link">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="service-corporate.html">Corporate Governance</a></li>
-                        <li><a href="service-taxation.html">Taxation & GST</a></li>
-                        <li><a href="service-fema.html">FEMA & RBI</a></li>
-                        <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
-                    </ul>
-                </li>
-                
-                <li><a href="links.html" class="nav-link">Useful Links</a></li>
-                <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
-                
-                <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-            </ul>
-
-            <div class="hamburger-icon" id="hamburgerBtn">
-                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
-</header>
 
-<script>
-    // 1. Header Shrink Effect on Scroll
-    const mainHeader = document.getElementById('mainHeader');
-    const navBar = document.getElementById('navBar');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navBar.style.height = '70px'; // Shrinks navbar
-            mainHeader.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-        } else {
-            navBar.style.height = '85px'; // Original size
-            mainHeader.style.boxShadow = '0 4px 15px rgba(0,0,0,0.05)';
-        }
-    });
-
-    // 2. Mobile Menu Toggle
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const navMenu = document.getElementById('navMenu');
-    
-    hamburgerBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        // Change icon from bars to X
-        const icon = hamburgerBtn.querySelector('i');
-        if(navMenu.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    });
-
-    // 3. Mobile Dropdown Toggle
-    const dropdowns = document.querySelectorAll('.has-dropdown');
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            // Only trigger on mobile view
-            if(window.innerWidth <= 992) {
-                // Prevent linking if they click the main span
-                if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
-                    this.classList.toggle('open');
-                }
-            }
-        });
-    });
-</script>
-
-    <section class="contact-hero">
-        <div class="container">
-            <span class="lead">Secure Communication</span>
-            <h1>Start Your Confidential Consultation</h1>
-            <p style="font-size: 1.1rem; color: #f0f0f0; max-width: 600px; margin: 0 auto; opacity: 0.9;">
-                We are ready to listen. Connect with our expert team using your preferred channel below.
-            </p>
-        </div>
-    </section>
-
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-grid">
-                
-                <div class="form-wrapper">
-                    <div class="form-header">
-                        <h2>Send a Message</h2>
-                        <p>Tell us about your legal requirements. This form will direct you to our official WhatsApp channel for immediate attention.</p>
+        <nav class="main-nav-bar" id="navBar" aria-label="Main Navigation">
+            <div class="nav-inner">
+                <a href="index.html" class="brand-logo" aria-label="Homepage">
+                    <i class="fas fa-balance-scale"></i>
+                    <div class="brand-text">
+                        <span class="brand-title">Avnish S & Associates</span>
+                        <span class="brand-subtitle">Corporate Legal Strategy</span>
                     </div>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="heritage.html">Our Heritage</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-corporate.html">Corporate Governance</a></li>
+                            <li><a href="service-taxation.html">Taxation & GST</a></li>
+                            <li><a href="service-fema.html">FEMA & RBI</a></li>
+                            <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link active" tabindex="0">Resources <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="fdi-calculator.html" style="color: var(--gold-prime); font-weight:700;"><i class="fas fa-calculator" style="margin-right:8px;"></i> FDI Route Finder</a></li>
+                            <li><a href="links.html">Useful Links</a></li>
+                            <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" rel="noopener noreferrer">Legal Insights</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="btn-contact" style="background: var(--gold-prime); color: var(--white);">Contact Us</a></li>
+                </ul>
+
+                <div class="hamburger-icon" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="contact-hero" aria-label="Contact Hero Banner">
+            <div class="container">
+                <span class="lead">Secure Communication</span>
+                <h1>Start Your Confidential Consultation</h1>
+                <p style="font-size: 1.1rem; color: #f0f0f0; max-width: 600px; margin: 0 auto; opacity: 0.9;">
+                    We are ready to listen. Connect with our expert team using your preferred channel below.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT LAYOUT -->
+        <section class="contact-section" aria-label="Contact Information and Form">
+            <div class="container">
+                <div class="contact-grid">
                     
-                    <form onsubmit="sendToWhatsapp(); return false;">
-                        <div class="form-row">
-                            <input type="text" id="wa-name" placeholder="Full Name *" required>
-                            <input type="email" id="wa-email" placeholder="Email Address *" required>
+                    <!-- FORM WRAPPER -->
+                    <div class="form-wrapper">
+                        <div class="form-header">
+                            <h2>Send a Message</h2>
+                            <p>Outline your corporate legal requirements. This secure form routes directly to our strategic WhatsApp channel for priority attention.</p>
                         </div>
-                        <div class="form-row">
-                            <input type="text" id="wa-phone" placeholder="Phone Number">
-                            <input type="text" id="wa-subject" placeholder="Subject (e.g. GST Filing)">
-                        </div>
-                        <div style="margin-bottom: 20px;">
-                            <textarea id="wa-message" placeholder="Describe your legal matter briefly..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">
-                            <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> Request Consultation
-                        </button>
-                    </form>
+                        
+                        <form onsubmit="sendToWhatsapp(event);" aria-label="Contact Form">
+                            <div class="form-row">
+                                <input type="text" id="wa-name" placeholder="Full Name / Company Name *" required aria-required="true">
+                                <input type="email" id="wa-email" placeholder="Corporate Email Address *" required aria-required="true">
+                            </div>
+                            <div class="form-row">
+                                <input type="tel" id="wa-phone" placeholder="Contact Number" required aria-required="true">
+                                <select id="wa-subject" aria-label="Select Subject" required>
+                                    <option value="" disabled selected>Select Area of Interest *</option>
+                                    <option value="Corporate Governance">Corporate Governance</option>
+                                    <option value="NCLT Litigation">NCLT Litigation</option>
+                                    <option value="Taxation & GST">Taxation & GST</option>
+                                    <option value="FEMA & Cross-Border">FEMA & Cross-Border</option>
+                                    <option value="General Consultation">General Consultation</option>
+                                </select>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <textarea id="wa-message" placeholder="Briefly describe your regulatory or legal matter..." required aria-required="true"></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit" aria-label="Send via WhatsApp">
+                                <i class="fab fa-whatsapp" style="font-size:1.2rem;" aria-hidden="true"></i> Request Priority Consultation
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- INFO CARDS -->
+                    <aside class="info-wrapper" aria-label="Contact Details">
+                        <address class="info-card" style="font-style: normal;">
+                            <i class="fas fa-phone-alt info-icon" aria-hidden="true"></i>
+                            <h4>Strategic Helpdesk</h4>
+                            <p>Mon - Sat, 9:00 AM - 7:00 PM (IST)</p>
+                            <p style="font-size: 1.1rem; color: var(--navy-royal);"><strong>+91-8126828661</strong></p>
+                        </address>
+
+                        <address class="info-card" style="font-style: normal;">
+                            <i class="fas fa-envelope info-icon" aria-hidden="true"></i>
+                            <h4>Electronic Mail</h4>
+                            <p>For official document submissions & corporate inquiries.</p>
+                            <p><strong>csavnishsharma@gmail.com</strong></p>
+                        </address>
+
+                        <address class="info-card" style="font-style: normal;">
+                            <i class="fas fa-map-marker-alt info-icon" aria-hidden="true"></i>
+                            <h4>Corporate Headquarters</h4>
+                            <p>Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
+                            <p style="font-size:0.85rem; color:var(--gold-prime); margin-top:5px; font-weight:700;">*In-Person Consultations by Appointment Only*</p>
+                        </address>
+                    </aside>
+
                 </div>
+            </div>
+        </section>
 
-                <div class="info-wrapper">
-                    <div class="info-card">
-                        <i class="fas fa-phone-alt info-icon"></i>
-                        <h4>Direct Line</h4>
-                        <p>Mon - Sat, 9am - 7pm</p>
-                        <p><strong>+91-8126828661</strong></p>
-                        <p><strong>+91-9557513775</strong></p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fas fa-envelope info-icon"></i>
-                        <h4>Electronic Mail</h4>
-                        <p>For document submissions & inquiries</p>
-                        <p><strong>csavnishsharma@gmail.com</strong></p>
-                        <p><strong>a.sharmaandcompany@gmail.com</strong></p>
-                    </div>
-
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt info-icon"></i>
-                        <h4>Office Headquarters</h4>
-                        <p>Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
-                        <p style="font-size:0.85rem; color:#888; margin-top:5px;">*Visits by Appointment Only*</p>
-                    </div>
+        <!-- TRUST BANNER -->
+        <section class="trust-banner" aria-label="Confidentiality Guarantee">
+            <div class="container" style="display:flex; align-items:center; justify-content:center; gap:30px;">
+                <i class="fas fa-user-shield trust-icon" aria-hidden="true"></i>
+                <div class="trust-text">
+                    <h3>Enterprise-Grade Confidentiality</h3>
+                    <p>Powered by zero-trust data policies and our encrypted LawOrbit framework. Every communication is privileged, ensuring your financial and strategic intent remains completely protected.</p>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="trust-banner">
-        <div class="container" style="display:flex; align-items:center; justify-content:center; gap:30px;">
-            <i class="fas fa-user-shield trust-icon"></i>
-            <div class="trust-text">
-                <h3>100% Client Confidentiality</h3>
-                <p>All communications are privileged and protected. We adhere to the strictest standards of legal ethics and data privacy.</p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="titan-footer">
+    <!-- SEMANTIC FOOTER -->
+    <footer class="titan-footer" aria-label="Site Footer">
         <div class="container">
             <div class="footer-cta">
                 <div class="cta-text">
                     <h3>Need Immediate Legal Assistance?</h3>
-                    <p>Our experts are available for urgent consultations.</p>
+                    <p>Our experts are available for urgent corporate interventions.</p>
                 </div>
-                <a href="#" onclick="window.scrollTo({top: 500, behavior: 'smooth'}); return false;" class="btn btn-gold">Contact Us Now</a>
+                <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-gold">Connect Now</a>
             </div>
 
             <div class="footer-divider"></div>
@@ -698,9 +433,8 @@
                     <a href="index.html" class="footer-logo">Avnish S & Associates</a>
                     <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
                     <div class="social-links-footer">
-                        <a href="https://www.linkedin.com/company/law-wheels-services-llp/"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/a-sharma-company/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -710,7 +444,6 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="heritage.html">Our Heritage</a></li>
                         <li><a href="leadership.html">Leadership</a></li>
-                        <li><a href="careers.html">Careers</a></li>
                     </ul>
                 </div>
 
@@ -725,10 +458,9 @@
                 </div>
 
                 <div class="footer-col contact-col">
-                    <h4>Contact</h4>
+                    <h4>Centralized Contact</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
                     <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
-                    <p><i class="fas fa-phone-alt"></i> +91-9557513775</p>
                     <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
                 </div>
             </div>
@@ -737,12 +469,12 @@
                 <div class="newsletter-area">
                     <span>Subscribe to Legal Insights:</span>
                     <form onsubmit="subscribeNewsletter(event)" class="footer-form">
-                        <input type="email" id="news-email" placeholder="Email Address" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        <input type="email" id="news-email" placeholder="Corporate Email Address" aria-label="Email Address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
                 <div class="legal-links">
-                    <span>&copy; 2025 Avnish S & Associates</span>
+                    <span>&copy; 2026 Avnish S & Associates</span>
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="terms.html">Terms of Engagement</a>
                     <a href="disclaimer.html">Disclaimer</a>
@@ -751,48 +483,79 @@
         </div>
     </footer>
 
-    <script>
-        // 1. WhatsApp Logic
-        function sendToWhatsapp() {
-            var name = document.getElementById('wa-name').value;
-            var email = document.getElementById('wa-email').value;
-            var phone = document.getElementById('wa-phone').value;
-            var subject = document.getElementById('wa-subject').value;
-            var message = document.getElementById('wa-message').value;
+    <!-- CENTRALIZED WHATSAPP FAB -->
+    <a href="https://wa.me/918126828661" class="fab-wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-            var text = "*New Consultation Request*\n" +
-                       "Name: " + name + "\n" +
+    <!-- FUNCTIONAL SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navBar = document.getElementById('navBar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { navBar.style.height = '70px'; } 
+                else { navBar.style.height = '85px'; }
+            });
+
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+            hamburgerBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if(navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+                }
+            });
+
+            const dropdowns = document.querySelectorAll('.has-dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if(window.innerWidth <= 992) {
+                        if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
+                            this.classList.toggle('open');
+                        }
+                    }
+                });
+            });
+        });
+
+        // WhatsApp Form Logic with basic validation
+        function sendToWhatsapp(e) {
+            e.preventDefault();
+            
+            var name = document.getElementById('wa-name').value.trim();
+            var email = document.getElementById('wa-email').value.trim();
+            var phone = document.getElementById('wa-phone').value.trim();
+            var subject = document.getElementById('wa-subject').value;
+            var message = document.getElementById('wa-message').value.trim();
+
+            if(!name || !email || !phone || !subject || !message) {
+                alert("Please fill in all required fields to proceed.");
+                return;
+            }
+
+            var text = "*Priority Consultation Request*\n" +
+                       "Name/Company: " + name + "\n" +
                        "Email: " + email + "\n" +
                        "Phone: " + phone + "\n" +
-                       "Subject: " + subject + "\n" +
-                       "Message: " + message;
+                       "Interest Area: " + subject + "\n\n" +
+                       "Details: " + message;
 
             var encodedText = encodeURIComponent(text);
             var url = "https://wa.me/918126828661?text=" + encodedText;
             window.open(url, '_blank');
         }
 
-        // 2. Newsletter Logic
         function subscribeNewsletter(e) {
             e.preventDefault();
             var email = document.getElementById('news-email').value;
             if(email) {
-                alert("Thank you for subscribing! You will receive legal updates at " + email);
+                alert("Welcome to the inner circle! You will receive our premium corporate updates at " + email);
                 document.getElementById('news-email').value = "";
             }
         }
-
-        // 3. Header Scroll
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.style.height = '75px';
-                header.style.top = '46px';
-            } else {
-                header.style.height = '90px';
-                header.style.top = '46px';
-            }
-        });
     </script>
 </body>
 </html>

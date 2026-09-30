@@ -1,1000 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-01YJ2ZVMQW');
-</script>
-<link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regulatory Disclaimer | Avnish S & Associates</title>
     
+    <!-- ADVANCED SEO & TARGETING META TAGS -->
+    <title>Regulatory Disclaimer | Avnish S & Associates</title>
+    <meta name="description" content="Official regulatory disclaimer for Avnish S & Associates in compliance with the Bar Council of India (BCI) and Institute of Company Secretaries of India (ICSI) rules.">
+    <meta name="robots" content="noindex, follow"> <!-- Legal disclaimers shouldn't typically be indexed to avoid duplicate content penalties, but links should be followed -->
+    <meta name="author" content="Avnish S & Associates">
+    
+    <!-- SECURITY HEADERS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com https://www.googletagmanager.com;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-01YJ2ZVMQW');
+    </script>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- FONTS & ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
     <style>
+        /* =========================================
+           1. CORE SYSTEM & TITAN VARIABLES
+           ========================================= */
         :root {
-            --navy-deep: #050A15; /* Even darker, pure midnight */
-            --navy-royal: #0B1B3D;
-            --gold-prime: #D4AF37;
-            --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+            --navy-deep: #020d17;
+            --navy-royal: #0a2540;
+            --gold-prime: #c5a059;
             --white: #ffffff;
-            --text-muted: #8E9BAE;
+            --text-dark: #1a1a1a;
+            --transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-subtle: 0 4px 15px rgba(0,0,0,0.05);
+            --shadow-hover: 0 15px 35px rgba(0,0,0,0.1);
         }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: #FAFAFA;
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; color: var(--navy-royal); margin-bottom: 15px; font-weight: 700; }
+        a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition); }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
 
-        /* =========================================
-           1. ELITE TOP BAR
-           ========================================= */
-        .top-bar { 
-            background: var(--navy-deep); 
-            color: var(--text-muted); 
-            padding: 10px 0; 
-            font-size: 0.8rem; 
-            position: relative; 
-            z-index: 1100; 
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2); 
-            letter-spacing: 1px;
-        }
-        .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
-        .contact-snippets { display: flex; gap: 35px; }
-        .contact-snippets a {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: all 0.4s ease;
-            display: flex;
-            align-items: center;
-        }
-        .contact-snippets a:hover { color: #fff; text-shadow: 0 0 10px rgba(212,175,55,0.5); }
-        .contact-snippets i { 
-            background: var(--gold-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-right: 10px; 
-            font-size: 1rem;
-        }
-        
-        .social-links { display: flex; gap: 15px; }
-        .social-links a { 
-            display: flex; justify-content: center; align-items: center;
-            width: 28px; height: 28px;
-            border: 1px solid rgba(142, 155, 174, 0.3);
-            border-radius: 50%;
-            color: var(--text-muted); 
-            transition: all 0.4s ease;
-        }
-        .social-links a:hover { 
-            border-color: var(--gold-prime); 
-            color: var(--gold-prime); 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(212,175,55,0.2);
-        }
+        .btn { display: inline-block; padding: 14px 32px; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 2px; cursor: pointer; transition: all 0.3s var(--transition); border: 2px solid transparent; }
+        .btn-gold { background-color: var(--gold-prime); color: var(--white); box-shadow: 0 4px 10px rgba(197, 160, 89, 0.2); }
+        .btn-gold:hover { background-color: var(--navy-royal); color: var(--white); transform: translateY(-2px); }
 
         /* =========================================
-           2. GLASSMORPHISM MAIN HEADER
+           NAVBAR (Consolidated & Semantic)
            ========================================= */
-        .main-header { 
-            background: rgba(255, 255, 255, 0.92); 
-            backdrop-filter: blur(12px); /* Frosted Glass Effect */
-            -webkit-backdrop-filter: blur(12px);
-            height: 90px; 
-            display: flex; align-items: center; 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.04); 
-            position: sticky; top: 0; z-index: 1000; 
-            border-bottom: 2px solid rgba(212, 175, 55, 0.5); 
-            transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
-        }
-        .main-header .container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .site-header { position: sticky; top: 0; z-index: 9999; width: 100%; box-shadow: var(--shadow-subtle); transition: all 0.3s ease; background: var(--white); }
+        .exact-top-bar { background-color: var(--navy-deep); padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: flex-end; align-items: center; }
+        .top-contact-info { display: flex; gap: 30px; margin-right: 20px; }
+        .top-contact-info a { color: #96a1af; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition: 0.3s; font-weight: 700;}
+        .top-contact-info a:hover { color: var(--white); }
+        .top-contact-info i { color: var(--gold-prime); }
         
-        .logo-area { display: flex; align-items: center; gap: 15px; cursor: pointer; }
-        .logo-main { 
-            font-family: 'Cormorant Garamond', serif; 
-            font-size: 1.8rem; 
-            color: var(--navy-royal); 
-            font-weight: 700; 
-            letter-spacing: 1px; 
-        }
-        .logo-sub { 
-            font-family: 'Inter', sans-serif; 
-            font-size: 0.65rem; 
-            color: #888; 
-            text-transform: uppercase; 
-            letter-spacing: 4px; 
-            font-weight: 500; 
-            display: block; 
-            margin-top: 2px;
-        }
+        .main-nav-bar { height: 85px; display: flex; align-items: center; transition: height 0.3s ease; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
         
-        .nav-list { display: flex; align-items: center; gap: 40px; list-style: none; margin: 0; padding: 0;}
-        .nav-link { 
-            font-weight: 500; font-size: 0.85rem; color: var(--navy-royal); 
-            text-transform: uppercase; letter-spacing: 1.5px;
-            padding: 35px 0; position: relative; cursor: pointer; text-decoration: none; 
-            transition: color 0.3s ease;
-        }
-        /* Premium Animated Sweep Underline */
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 25px; left: 0;
-            width: 0; height: 2px;
-            background: var(--gold-gradient);
-            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .nav-link:hover::after { width: 100%; }
-        .nav-link:hover { color: var(--gold-prime); }
+        .brand-logo { display: flex; align-items: center; gap: 12px; }
+        .brand-logo i { font-size: 2.2rem; color: var(--navy-royal); }
+        .brand-text { display: flex; flex-direction: column; }
+        .brand-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.1; }
+        .brand-subtitle { font-family: 'Lato', sans-serif; font-size: 0.65rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; margin-top: 2px; }
 
-        .btn-header { 
-            background: transparent; color: var(--navy-royal); 
-            padding: 12px 28px; font-size: 0.8rem; font-weight: 600; 
-            text-transform: uppercase; letter-spacing: 1.5px; 
-            border: 1px solid var(--gold-prime); border-radius: 0; 
-            transition: all 0.4s ease; text-decoration: none;
-            position: relative; overflow: hidden;
-        }
-        .btn-header:hover { 
-            background: var(--gold-gradient); color: var(--navy-deep); 
-            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-            border-color: transparent;
-        }
-
-        .mega-menu { 
-            position: absolute; top: 100%; left: -20px; 
-            background: rgba(255, 255, 255, 0.98); 
-            backdrop-filter: blur(10px);
-            width: 280px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
-            opacity: 0; visibility: hidden; transform: translateY(20px); 
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
-            border-top: 3px solid var(--gold-prime); padding: 15px 0; list-style: none; z-index: 1001;
-        }
-        .mega-menu li a { 
-            display: block; padding: 12px 25px; color: var(--navy-royal); 
-            text-decoration: none; font-size: 0.85rem; letter-spacing: 1px;
-            transition: 0.3s; position: relative;
-        }
-        .mega-menu li a:hover { 
-            color: var(--gold-prime); 
-            padding-left: 32px; /* Smooth slide right */
-            background: rgba(212, 175, 55, 0.03);
-        }
-        .has-dropdown:hover .mega-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .nav-menu { display: flex; align-items: center; gap: 30px; }
+        .nav-menu li { position: relative; }
+        .nav-link { font-weight: 700; font-size: 0.85rem; color: var(--navy-royal); text-transform: uppercase; letter-spacing: 0.5px; padding: 30px 0; cursor: pointer; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--gold-prime); }
+        
+        .dropdown-menu { position: absolute; top: 100%; left: -20px; background: var(--white); min-width: 240px; box-shadow: var(--shadow-hover); opacity: 0; visibility: hidden; transform: translateY(15px); transition: all 0.3s ease; border-top: 3px solid var(--gold-prime); padding: 10px 0; z-index: 1000; }
+        .has-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu a { display: block; padding: 12px 25px; color: var(--text-dark); font-size: 0.9rem; transition: 0.3s; }
+        .dropdown-menu a:hover { background-color: rgba(197, 160, 89, 0.05); color: var(--gold-prime); padding-left: 32px; }
+        
+        .btn-contact { display: inline-block; padding: 10px 24px; border: 2px solid var(--gold-prime); color: var(--navy-royal); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-left: 10px; }
+        .btn-contact:hover { background: var(--gold-prime); color: var(--white); }
+        .hamburger-icon { display: none; font-size: 1.5rem; color: var(--navy-royal); cursor: pointer; }
 
         /* =========================================
-           3. LEGAL CONTENT (Refined Typography)
+           LEGAL CONTENT SPECIFIC
            ========================================= */
-        .legal-hero { 
-            background: linear-gradient(to bottom, var(--navy-deep), var(--navy-royal)); 
-            color: #fff; padding: 120px 0 80px; text-align: center; 
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-        }
-        .legal-hero h1 { font-size: 3.5rem; margin-bottom: 15px; font-family: 'Cormorant Garamond', serif; font-weight: 600; }
-        .legal-hero p { color: var(--gold-prime); font-size: 1rem; text-transform: uppercase; letter-spacing: 3px; }
+        .legal-hero { background: var(--navy-deep); color: #fff; padding: 100px 0 60px; text-align: center; border-bottom: 4px solid var(--gold-prime); }
+        .legal-hero h1 { color: #fff; font-size: 2.8rem; margin-bottom: 10px; }
+        .legal-hero p { color: var(--gold-prime); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; }
         
-        .legal-content { padding: 100px 0; max-width: 900px; margin: 0 auto; }
-        .legal-clause { margin-bottom: 50px; }
-        .legal-clause h2 { 
-            font-size: 1.8rem; color: var(--navy-royal); margin-bottom: 20px; 
-            font-family: 'Cormorant Garamond', serif;
-            border-left: 3px solid var(--gold-prime); padding-left: 20px; 
-        }
-        .legal-clause p { margin-bottom: 15px; color: #555; line-height: 1.9; text-align: justify; font-size: 1.05rem; }
+        .legal-content { padding: 80px 0; max-width: 900px; margin: 0 auto; }
+        
+        .legal-clause { margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
+        .legal-clause:last-child { border-bottom: none; }
+        
+        .legal-clause h2 { font-size: 1.6rem; color: var(--navy-royal); margin-bottom: 20px; border-left: 4px solid var(--gold-prime); padding-left: 15px; }
+        .legal-clause h3 { font-size: 1.2rem; color: var(--text-dark); margin: 20px 0 10px; font-weight: 700; }
+        
+        .legal-clause p { margin-bottom: 15px; color: #444; line-height: 1.8; text-align: justify; font-size: 1.05rem; }
+        .legal-clause ul { list-style: square; padding-left: 25px; margin-bottom: 20px; color: #444; font-size: 1.05rem; }
+        .legal-clause li { margin-bottom: 10px; line-height: 1.6; }
+        
+        .statute-ref { background: rgba(197, 160, 89, 0.1); padding: 2px 6px; border-radius: 2px; font-weight: 700; color: var(--navy-royal); font-size: 0.95rem; border: 1px solid rgba(197, 160, 89, 0.3); }
+        .highlight-text { background-color: rgba(197, 160, 89, 0.1); padding: 15px; border-left: 3px solid var(--gold-prime); font-style: italic; margin: 20px 0; }
 
         /* =========================================
-           4. CINEMATIC FOOTER (Watermark + Clean Grid)
+           FOOTER (Consolidated)
            ========================================= */
-        .titan-footer { 
-            background: linear-gradient(180deg, var(--navy-deep) 0%, #000000 100%);
-            color: var(--text-muted); 
-            padding-top: 100px; 
-            font-size: 0.95rem; 
-            position: relative; 
-            overflow: hidden; /* For watermark */
-            border-top: 2px solid rgba(212, 175, 55, 0.3);
-        }
-        
-        /* The Luxury Watermark */
-        .footer-watermark {
-            position: absolute;
-            right: -5%;
-            bottom: -10%;
-            font-size: 35rem;
-            color: rgba(255, 255, 255, 0.015);
-            pointer-events: none;
-            z-index: 0;
-            transform: rotate(-10deg);
-        }
-        
-        .footer-grid { 
-            display: grid; 
-            grid-template-columns: 2fr 1fr 1fr 1.5fr; 
-            gap: 60px; 
-            margin-bottom: 80px; 
-            position: relative;
-            z-index: 1; /* Above watermark */
-        }
-        
-        .footer-logo { 
-            font-family: 'Cormorant Garamond', serif; 
-            font-size: 2.2rem; 
-            color: #fff; 
-            margin-bottom: 25px; 
-            display: inline-block; 
-            text-decoration: none;
-            background: var(--gold-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .footer-col h4 { 
-            color: #fff; margin-bottom: 30px; font-size: 1rem; 
-            letter-spacing: 2px; text-transform: uppercase; font-weight: 500;
-        }
-        
-        .footer-links { list-style: none; padding: 0; margin: 0; }
-        .footer-links li { margin-bottom: 18px; }
-        .footer-links a { 
-            color: var(--text-muted); text-decoration: none; 
-            transition: all 0.3s ease; position: relative;
-        }
-        .footer-links a:hover { color: #fff; padding-left: 8px; }
-
-        .footer-contact-info p {
-            margin-bottom: 18px; color: var(--text-muted);
-            display: flex; align-items: center; gap: 15px;
-        }
-        .footer-contact-info i { color: var(--gold-prime); font-size: 1.1rem;}
-
-        .footer-bottom-row { 
-            background: rgba(255, 255, 255, 0.02); 
-            padding: 35px 0; 
-            border-top: 1px solid rgba(255, 255, 255, 0.05); 
-            position: relative; z-index: 1;
-        }
-        .footer-bottom-container { display: flex; justify-content: space-between; align-items: center; }
-        
-        .newsletter-area span {
-            color: #fff; font-weight: 500; letter-spacing: 2px; font-size: 0.85rem; text-transform: uppercase;
-        }
-
-        .legal-links { display: flex; gap: 30px; align-items: center; font-size: 0.85rem;}
-        .legal-links a { 
-            color: var(--text-muted); text-decoration: none; 
-            transition: 0.3s; letter-spacing: 0.5px;
-        }
+        .titan-footer { background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; }
+        .footer-cta { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
+        .cta-text h3 { color: #fff; font-size: 2rem; margin-bottom: 5px; }
+        .cta-text p { color: var(--gold-prime); font-size: 1.1rem; margin: 0; }
+        .footer-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); margin-bottom: 60px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; margin-bottom: 20px; display: block; }
+        .brand-desc { line-height: 1.6; margin-bottom: 25px; opacity: 0.8; }
+        .social-links-footer { display: flex; gap: 15px; }
+        .social-links-footer a { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s; }
+        .social-links-footer a:hover { background: var(--gold-prime); border-color: var(--gold-prime); color: var(--navy-deep); }
+        .footer-col h4 { color: #fff; margin-bottom: 25px; font-size: 1.1rem; letter-spacing: 1px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { transition: all 0.3s; display: inline-block; }
+        .footer-links a:hover { color: var(--gold-prime); transform: translateX(5px); }
+        .contact-col p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; }
+        .contact-col i { color: var(--gold-prime); margin-top: 5px; }
+        .footer-bottom-row { background: rgba(0,0,0,0.2); padding: 30px 40px; border-radius: 4px 4px 0 0; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid var(--gold-prime); }
+        .newsletter-area { display: flex; align-items: center; gap: 20px; }
+        .newsletter-area span { color: #fff; font-weight: 700; }
+        .footer-form { display: flex; }
+        .footer-form input { padding: 12px 15px; border: none; outline: none; background: #fff; font-family: 'Lato', sans-serif; min-width: 250px; }
+        .footer-form button { background: var(--gold-prime); border: none; width: 50px; cursor: pointer; color: #fff; transition: 0.3s; font-size: 1.1rem; }
+        .footer-form button:hover { background: #fff; color: var(--navy-deep); }
+        .legal-links { font-size: 0.85rem; }
+        .legal-links a { color: #888; margin-left: 20px; transition: 0.3s; }
         .legal-links a:hover { color: var(--gold-prime); }
-        
-        @media (max-width: 900px) {
-            .navbar { display: none; }
+        .fab-wa { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); z-index: 900; transition: var(--transition); }
+        .fab-wa:hover { transform: scale(1.1); }
+
+        @media (max-width: 992px) {
+            .top-contact-info { display: none; }
+            .hamburger-icon { display: block; }
+            .nav-menu { position: absolute; top: 85px; left: -100%; width: 100%; background: var(--white); flex-direction: column; gap: 0; box-shadow: 0 10px 15px rgba(0,0,0,0.1); transition: 0.4s ease; text-align: left; padding-bottom: 20px; }
+            .nav-menu.active { left: 0; }
+            .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
+            .nav-link { display: block; padding: 15px 20px; }
+            .dropdown-menu { position: relative; top: 0; left: 0; width: 100%; box-shadow: none; border-top: none; opacity: 1; visibility: visible; transform: none; display: none; background: #f9f9f9; }
+            .has-dropdown.open .dropdown-menu { display: block; }
+            .btn-contact { margin: 20px; text-align: center; }
+            
             .footer-grid { grid-template-columns: 1fr 1fr; }
-            .footer-bottom-container { flex-direction: column; text-align: center; gap: 20px; }
-            .contact-snippets { display: none; }
+            .footer-cta, .footer-bottom-row, .newsletter-area { flex-direction: column; text-align: center; gap: 20px; }
         }
+        @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
-    <style>
-    :root {
-        --nav-navy: #030d17;
-        --nav-gold: #c8a165;
-        --nav-white: #ffffff;
-        --nav-text-dark: #1a1a1a;
-        --nav-gray: #96a1af;
-    }
-
-    /* Sticky Wrapper */
-    .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 9999;
-        width: 100%;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-    }
-
-    /* 1. TOP BAR STYLES */
-    .exact-top-bar {
-        background-color: var(--nav-navy);
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    .top-bar-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .top-contact-info { display: flex; gap: 30px; }
-    .top-contact-info a {
-        color: var(--nav-gray);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.85rem;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        transition: 0.3s;
-    }
-    .top-contact-info a:hover { color: var(--nav-white); }
-    .top-contact-info i { color: var(--nav-gold); font-size: 0.95rem; }
-    
-    .top-socials { display: flex; gap: 12px; }
-    .top-socials a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 26px;
-        height: 26px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        color: var(--nav-gray);
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 0.8rem;
-    }
-    .top-socials a:hover { border-color: var(--nav-gold); color: var(--nav-gold); }
-
-    /* 2. MAIN NAV STYLES */
-    .main-nav-bar {
-        background-color: var(--nav-white);
-        height: 85px;
-        display: flex;
-        align-items: center;
-        transition: height 0.3s ease;
-    }
-    .nav-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    
-    /* Logo */
-    .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .brand-logo i { font-size: 2.2rem; color: var(--nav-navy); }
-    .brand-text { display: flex; flex-direction: column; }
-    .brand-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.6rem;
-        color: var(--nav-navy);
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        line-height: 1.1;
-    }
-    .brand-subtitle {
-        font-family: 'Lato', sans-serif;
-        font-size: 0.65rem;
-        color: #666;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 700;
-        margin-top: 2px;
-    }
-
-    /* Menu Links */
-    .nav-menu {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    .nav-menu li { position: relative; }
-    .nav-link {
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        font-size: 0.85rem;
-        color: var(--nav-navy);
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0.5px;
-        padding: 30px 0;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .nav-link:hover, .nav-link.active { color: var(--nav-gold); }
-    
-    /* Dropdown (Mega Menu) */
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: -20px;
-        background: var(--nav-white);
-        min-width: 240px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(15px);
-        transition: all 0.3s ease;
-        border-top: 3px solid var(--nav-gold);
-        list-style: none;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-    .has-dropdown:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    .dropdown-menu li { padding: 0; }
-    .dropdown-menu a {
-        display: block;
-        padding: 12px 25px;
-        color: var(--nav-text-dark);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .dropdown-menu a:hover {
-        background-color: rgba(200, 161, 101, 0.05);
-        color: var(--nav-gold);
-        padding-left: 32px;
-    }
-
-    /* FIX: Clean Contact Us Button */
-    .btn-contact {
-        display: inline-block;
-        padding: 10px 24px;
-        border: 2px solid var(--nav-gold);
-        color: var(--nav-navy);
-        font-family: 'Lato', sans-serif;
-        font-size: 0.85rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-decoration: none;
-        background: transparent;
-        transition: 0.3s;
-        border-radius: 2px;
-        margin-left: 10px;
-    }
-    .btn-contact:hover {
-        background: var(--nav-gold);
-        color: var(--nav-white);
-    }
-
-    /* Mobile Hamburger */
-    .hamburger-icon {
-        display: none;
-        font-size: 1.5rem;
-        color: var(--nav-navy);
-        cursor: pointer;
-    }
-
-    /* Responsive Styles */
-    @media (max-width: 992px) {
-        .top-contact-info { display: none; } /* Hide email/phone on mobile to save space */
-        .top-bar-inner { justify-content: flex-end; }
-        
-        .hamburger-icon { display: block; }
-        
-        .nav-menu {
-            position: absolute;
-            top: 85px;
-            left: -100%;
-            width: 100%;
-            background: var(--nav-white);
-            flex-direction: column;
-            gap: 0;
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-            transition: 0.4s ease;
-            text-align: left;
-            padding-bottom: 20px;
-        }
-        .nav-menu.active { left: 0; }
-        .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
-        .nav-link { display: block; padding: 15px 20px; }
-        
-        .dropdown-menu {
-            position: relative;
-            top: 0; left: 0;
-            width: 100%;
-            box-shadow: none;
-            border-top: none;
-            opacity: 1; visibility: visible; transform: none;
-            display: none;
-            background: #f9f9f9;
-        }
-        .has-dropdown.open .dropdown-menu { display: block; }
-        .btn-contact { margin: 20px; text-align: center; }
-    }
-</style>
-
-<header class="site-header" id="mainHeader">
-    <div class="exact-top-bar">
-        <div class="top-bar-inner">
-            <div class="top-contact-info">
-                <a href="mailto:csavnishsharma@gmail.com"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
-                <a href="tel:+918126828661"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
-            </div>
-            <div class="top-socials">
-                <a href="https://www.linkedin.com/company/law-wheels-services-llp/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <header class="site-header" id="mainHeader">
+        <div class="exact-top-bar">
+            <div class="top-bar-inner">
+                <div class="top-contact-info">
+                    <a href="mailto:csavnishsharma@gmail.com" aria-label="Email Us"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
+                    <a href="tel:+918126828661" aria-label="Call Us"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="main-nav-bar" id="navBar">
-        <div class="nav-inner">
-            <a href="index.html" class="brand-logo">
-                <i class="fas fa-balance-scale"></i>
-                <div class="brand-text">
-                    <span class="brand-title">Avnish S & Associates</span>
-                    <span class="brand-subtitle">Legal Consultants</span>
+        <nav class="main-nav-bar" id="navBar" aria-label="Main Navigation">
+            <div class="nav-inner">
+                <a href="index.html" class="brand-logo" aria-label="Homepage">
+                    <i class="fas fa-balance-scale"></i>
+                    <div class="brand-text">
+                        <span class="brand-title">Avnish S & Associates</span>
+                        <span class="brand-subtitle">Corporate Legal Strategy</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="heritage.html">Our Heritage</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-corporate.html">Corporate Governance</a></li>
+                            <li><a href="service-taxation.html">Taxation & GST</a></li>
+                            <li><a href="service-fema.html">FEMA & RBI</a></li>
+                            <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link active" tabindex="0">Resources <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="fdi-calculator.html" style="color: var(--gold-prime); font-weight:700;"><i class="fas fa-calculator" style="margin-right:8px;"></i> FDI Route Finder</a></li>
+                            <li><a href="links.html">Useful Links</a></li>
+                            <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" rel="noopener noreferrer">Legal Insights</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+                </ul>
+
+                <div class="hamburger-icon" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
                 </div>
-            </a>
+            </div>
+        </nav>
+    </header>
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+    <main>
+        <section class="legal-hero" aria-label="Page Title">
+            <div class="container">
+                <h1>Regulatory Disclaimer</h1>
+                <p>Statutory Adherence & Legal Boundaries</p>
+            </div>
+        </section>
+
+        <section class="legal-content" aria-label="Disclaimer Content">
+            <div class="container">
+                <div class="legal-clause">
+                    <p>The rules enacted by the <span class="statute-ref">Institute of Company Secretaries of India (ICSI)</span> and the <span class="statute-ref">Bar Council of India (BCI)</span> strictly prohibit professionals, law firms, and legal practitioners from soliciting work or advertising their services in any domain. By proceeding to access and browse this website (https://avnish.lawwheelsservices.co.in/), the user voluntarily acknowledges, agrees, and confirms the following definitive statements:</p>
+                </div>
+
+                <div class="legal-clause">
+                    <h2>1. Absence of Solicitation or Advertisement</h2>
+                    <p>The user acknowledges that there has been no advertisement, personal communication, solicitation, invitation, or inducement of any sort whatsoever from <strong>Avnish S & Associates</strong>, its partners, or its members to solicit any work through this website. The user independently wishes to gain more information about the Firm, its practice areas, and its professionals for their own knowledge and personal use.</p>
+                </div>
+
+                <div class="legal-clause">
+                    <h2>2. Voluntary Access & Informational Purpose</h2>
+                    <p>The information, publications, and material provided on this website are supplied solely upon the user's specific request. Any information obtained or materials downloaded from this website are executed completely at the user's volition. The content herein is exclusively for informational purposes and should not be construed as statutory advisory or legal opinion.</p>
+                </div>
+
+                <div class="legal-clause">
+                    <h2>3. No Professional-Client Relationship</h2>
+                    <p>The transmission, receipt, or utilization of this website, including but not limited to the submission of inquiries via contact forms or direct emails, does not constitute, formulate, or create an attorney-client or professional-client relationship. Users must not act, or refrain from acting, based upon any information contained on this site without seeking appropriate, customized legal counsel from a duly authorized and qualified professional.</p>
+                </div>
+
+                <div class="legal-clause">
+                    <h2>4. Intellectual Property Rights</h2>
+                    <p>All content, articles, case summaries, original texts, visual assets, and proprietary frameworks (including references to LawOrbit and LexLedger) featured on this website are the intellectual property of Avnish S & Associates. Unauthorized reproduction, distribution, scraping, or commercial exploitation of any material from this domain without prior explicit written consent is strictly prohibited and legally actionable.</p>
+                </div>
                 
-                <li class="has-dropdown">
-                    <span class="nav-link">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
-                    <ul class="dropdown-menu">
+                <div class="legal-clause">
+                    <h2>5. Strategic Alliance Acknowledgment</h2>
+                    <p>Users acknowledge that Avnish S & Associates operates in a formal strategic alliance with <strong>LAW WHEELS SERVICES LLP</strong> to provide comprehensive cross-border litigation, FEMA advisory, and real estate legal support. While both entities collaborate seamlessly to execute mandates, they remain distinct legal establishments operating within their respective statutory jurisdictions.</p>
+                </div>
+
+                <div class="legal-clause">
+                    <h2>6. Absolute Limitation of Liability</h2>
+                    <p>Avnish S & Associates assumes no liability whatsoever for any direct, indirect, incidental, or consequential damages, financial losses, or prejudices resulting from actions taken by the user relying on the material or information provided on this website. The Firm does not guarantee that the website is free of inaccuracies, outdated legal precedents, typographical errors, or harmful digital components (such as viruses).</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="titan-footer" aria-label="Site Footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="cta-text">
+                    <h3>Ready to Engineer Your Growth?</h3>
+                    <p>Partner with India's premier corporate legal strategists.</p>
+                </div>
+                <a href="contact.html" class="btn btn-gold">Schedule Consultation</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">Avnish S & Associates</a>
+                    <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
+                    <div class="social-links-footer">
+                        <a href="https://www.linkedin.com/company/a-sharma-company/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>The Firm</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="heritage.html">Our Heritage</a></li>
-                        <li><a href="leadership.html">Leadership Team</a></li>
-                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
                     </ul>
-                </li>
+                </div>
 
-                <li class="has-dropdown">
-                    <span class="nav-link">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
-                    <ul class="dropdown-menu">
-                        <li><a href="service-corporate.html">Corporate Governance</a></li>
+                <div class="footer-col">
+                    <h4>Expertise</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-corporate.html">Corporate Law</a></li>
                         <li><a href="service-taxation.html">Taxation & GST</a></li>
-                        <li><a href="service-fema.html">FEMA & RBI</a></li>
-                        <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
+                        <li><a href="service-fema.html">FEMA Advisory</a></li>
+                        <li><a href="service-nclt.html">Dispute Resolution</a></li>
                     </ul>
-                </li>
-                
-                <li><a href="links.html" class="nav-link">Useful Links</a></li>
-                <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" class="nav-link">Insights</a></li>
-                
-                <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
-            </ul>
+                </div>
 
-            <div class="hamburger-icon" id="hamburgerBtn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </div>
-</header>
-
-<script>
-    // 1. Header Shrink Effect on Scroll
-    const mainHeader = document.getElementById('mainHeader');
-    const navBar = document.getElementById('navBar');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navBar.style.height = '70px'; // Shrinks navbar
-            mainHeader.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-        } else {
-            navBar.style.height = '85px'; // Original size
-            mainHeader.style.boxShadow = '0 4px 15px rgba(0,0,0,0.05)';
-        }
-    });
-
-    // 2. Mobile Menu Toggle
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const navMenu = document.getElementById('navMenu');
-    
-    hamburgerBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        // Change icon from bars to X
-        const icon = hamburgerBtn.querySelector('i');
-        if(navMenu.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    });
-
-    // 3. Mobile Dropdown Toggle
-    const dropdowns = document.querySelectorAll('.has-dropdown');
-    dropdowns.forEach(dropdown => {
-        dropdown.addEventListener('click', function(e) {
-            // Only trigger on mobile view
-            if(window.innerWidth <= 992) {
-                // Prevent linking if they click the main span
-                if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
-                    this.classList.toggle('open');
-                }
-            }
-        });
-    });
-</script>
-
-    <section class="legal-hero">
-        <div class="container">
-            <h1>Regulatory Disclaimer</h1>
-            <p>Compliance with Bar Council of India Rules</p>
-        </div>
-    </section>
-
-    <section class="legal-content">
-        <div class="container">
-            <div class="legal-clause">
-                <p>The rules of the <strong>Bar Council of India</strong> prohibit law firms from soliciting work or advertising in any manner. By accessing this website (www.asharmaco.com), the user acknowledges and confirms the following:</p>
-            </div>
-
-            <div class="legal-clause">
-                <h2>1. No Solicitation or Advertisement</h2>
-                <p>The user wishes to gain more information about <strong>A. Sharma & Co.</strong>, its practice areas, and its attorneys for their own information and use. This website is not intended to be a source of advertising or solicitation.</p>
-            </div>
-
-            <div class="legal-clause">
-                <h2>2. Voluntary Access</h2>
-                <p>The information is provided only on the user's specific request. Any information obtained or materials downloaded from this website are completely at the user's volition.</p>
-            </div>
-
-            <div class="legal-clause">
-                <h2>3. No Attorney-Client Relationship</h2>
-                <p>Transmission, receipt, or use of this site does not constitute or create an attorney-client relationship. No user should act or refrain from acting based on information contained on this site without seeking appropriate legal advice from a qualified professional.</p>
-            </div>
-
-            <div class="legal-clause">
-                <h2>4. Limitation of Liability</h2>
-                <p><strong>A. Sharma & Co.</strong> is not liable for any consequence of any action taken by the user relying on material/information provided on this website. In cases where the user has any legal issues, they must seek independent legal advice.</p>
-            </div>
-        </div>
-    </section>
-
-    <style>
-    :root {
-        --footer-bg: #030d17;
-        --footer-gold: #c8a165;
-        --footer-text: #96a1af;
-        --footer-white: #ffffff;
-    }
-
-    .exact-footer {
-        background-color: var(--footer-bg);
-        color: var(--footer-text);
-        font-family: 'Lato', sans-serif;
-        padding-top: 60px;
-        position: relative;
-        border-top: none;
-    }
-
-    .exact-footer .footer-container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    /* Top CTA */
-    .footer-cta {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-    .cta-text h2 {
-        font-family: 'Playfair Display', serif;
-        color: var(--footer-white);
-        font-size: 2.1rem;
-        margin: 0 0 8px 0;
-        font-weight: 700;
-    }
-    .cta-text p {
-        color: var(--footer-gold);
-        font-size: 1.05rem;
-        margin: 0;
-    }
-    .cta-button {
-        background-color: var(--footer-gold);
-        color: var(--footer-white);
-        padding: 14px 28px;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 0.85rem;
-        letter-spacing: 0.5px;
-        border-radius: 2px;
-        transition: 0.3s;
-    }
-    .cta-button:hover { background-color: #b38e50; }
-
-    /* Divider */
-    .footer-divider {
-        border: 0;
-        height: 1px;
-        background: rgba(255, 255, 255, 0.06);
-        margin-bottom: 50px;
-    }
-
-    /* Grid */
-    .footer-grid {
-        display: grid;
-        grid-template-columns: 1.6fr 1fr 1fr 1.6fr;
-        gap: 30px;
-        margin-bottom: 60px;
-    }
-
-    .grid-col h3 {
-        font-family: 'Playfair Display', serif;
-        color: var(--footer-white);
-        font-size: 1.8rem;
-        margin: 0 0 15px 0;
-        font-weight: 600;
-    }
-    .grid-col h4 {
-        font-family: 'Playfair Display', serif;
-        color: var(--footer-white);
-        font-size: 1.2rem;
-        margin: 0 0 20px 0;
-        font-weight: 600;
-    }
-    .brand-col p {
-        line-height: 1.6;
-        margin-bottom: 25px;
-        font-size: 0.9rem;
-    }
-
-    /* Social Icons */
-    .social-icons {
-        display: flex;
-        gap: 15px;
-    }
-    .social-icons a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 38px;
-        height: 38px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 50%;
-        color: var(--footer-white);
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 0.9rem;
-    }
-    .social-icons a:hover {
-        border-color: var(--footer-gold);
-        color: var(--footer-gold);
-    }
-
-    /* Links */
-    .links-col ul, .contact-col ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .links-col li { margin-bottom: 12px; }
-    .links-col a {
-        color: var(--footer-text);
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: 0.3s;
-    }
-    .links-col a:hover { color: var(--footer-gold); }
-
-    /* Contact Specific */
-    .contact-col li {
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;
-        margin-bottom: 18px;
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    .contact-col i {
-        color: var(--footer-gold);
-        margin-top: 4px;
-        font-size: 0.9rem;
-    }
-    .contact-col a {
-        color: var(--footer-text);
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .contact-col a:hover { color: var(--footer-gold); }
-
-    /* Bottom Wrapper */
-    .footer-bottom-wrapper {
-        border-top: 2px solid var(--footer-gold);
-        background-color: var(--footer-bg);
-        padding: 25px 0;
-    }
-    .bottom-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    /* Newsletter */
-    .newsletter {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-    .newsletter span {
-        color: var(--footer-white);
-        font-weight: 700;
-        font-size: 0.85rem;
-    }
-    .newsletter form { display: flex; }
-    .newsletter input {
-        padding: 12px 15px;
-        border: none;
-        outline: none;
-        width: 220px;
-        font-family: 'Lato', sans-serif;
-        font-size: 0.9rem;
-    }
-    .newsletter button {
-        background-color: var(--footer-gold);
-        color: var(--footer-white);
-        border: none;
-        padding: 0 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-    .newsletter button:hover { background-color: #b38e50; }
-
-    /* Bottom Links */
-    .bottom-links {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        font-size: 0.8rem;
-    }
-    .bottom-links a {
-        color: var(--footer-text);
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .bottom-links a:hover { color: var(--footer-white); }
-
-    /* WhatsApp Floating Button */
-    .whatsapp-float {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        width: 55px;
-        height: 55px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 32px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        z-index: 1000;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    .whatsapp-float:hover {
-        background-color: #1ebe57;
-        transform: scale(1.05);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-        .footer-cta, .bottom-bar {
-            flex-direction: column;
-            text-align: center;
-            gap: 25px;
-        }
-        .footer-grid { grid-template-columns: 1fr 1fr; }
-        .social-icons { justify-content: center; }
-    }
-    @media (max-width: 600px) {
-        .footer-grid { grid-template-columns: 1fr; text-align: center; }
-        .contact-col li { justify-content: center; }
-    }
-</style>
-
-<footer class="exact-footer">
-    <div class="footer-container">
-        <div class="footer-cta">
-            <div class="cta-text">
-                <h2>Ready to Engineer Your Growth?</h2>
-                <p>Partner with India's premier corporate legal strategists.</p>
-            </div>
-            <a href="contact.html" class="cta-button">SCHEDULE CONSULTATION</a>
-        </div>
-        
-        <hr class="footer-divider">
-        
-        <div class="footer-grid">
-            <div class="grid-col brand-col">
-                <h3>Avnish S & Associates</h3>
-                <p>We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/company/law-wheels-services-llp/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="footer-col contact-col">
+                    <h4>Centralized Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
+                    <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
                 </div>
             </div>
-            
-            <div class="grid-col links-col">
-                <h4>The Firm</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="heritage.html">Our Heritage</a></li>
-                    <li><a href="leadership.html">Leadership</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                </ul>
-            </div>
-            
-            <div class="grid-col links-col">
-                <h4>Expertise</h4>
-                <ul>
-                    <li><a href="service-corporate.html">Corporate Law</a></li>
-                    <li><a href="service-taxation.html">Taxation & GST</a></li>
-                    <li><a href="service-fema.html">FEMA Advisory</a></li>
-                    <li><a href="service-nclt.html">Dispute Resolution</a></li>
-                </ul>
-            </div>
-            
-            <div class="grid-col contact-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i> 
-                        <span>Office No. T-93F, Galaxy Blue Sapphire, Sector-4,<br>Greater Noida West, U.P - 201308</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-alt"></i> 
-                        <span>+91-8126828661</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-alt"></i> 
-                        <span>+91-9557513775</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i> 
-                        <span><a href="mailto:csavnishsharma@gmail.com">csavnishsharma@gmail.com</a></span>
-                    </li>
-                </ul>
+
+            <div class="footer-bottom-row">
+                <div class="newsletter-area">
+                    <span>Subscribe to Legal Insights:</span>
+                    <form onsubmit="subscribeNewsletter(event)" class="footer-form">
+                        <input type="email" id="news-email" placeholder="Corporate Email Address" aria-label="Email Address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="legal-links">
+                    <span>&copy; 2026 Avnish S & Associates</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Engagement</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="footer-bottom-wrapper">
-        <div class="footer-container bottom-bar">
-            <div class="newsletter">
-                <span>Subscribe to Legal Insights:</span>
-                <form action="#" method="POST" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Email Address" required>
-                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
-            <div class="bottom-links">
-                <span class="copyright">&copy; 2025 Avnish S & Associates</span>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Engagement</a>
-                <a href="disclaimer.html">Disclaimer</a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+    <!-- CENTRALIZED WHATSAPP FAB -->
+    <a href="https://wa.me/918126828661" class="fab-wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FUNCTIONAL SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navBar = document.getElementById('navBar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { navBar.style.height = '70px'; } 
+                else { navBar.style.height = '85px'; }
+            });
+
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+            hamburgerBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if(navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+                }
+            });
+
+            const dropdowns = document.querySelectorAll('.has-dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if(window.innerWidth <= 992) {
+                        if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
+                            this.classList.toggle('open');
+                        }
+                    }
+                });
+            });
+        });
+
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            var email = document.getElementById('news-email').value;
+            if(email) {
+                alert("Welcome to the inner circle! You will receive our premium corporate updates at " + email);
+                document.getElementById('news-email').value = "";
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,27 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | Avnish S & Associates</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- ADVANCED SEO & TARGETING META TAGS -->
+    <title>404 - Case Not Found | Avnish S & Associates</title>
+    <meta name="description" content="The page you are looking for is unavailable. Return to Avnish S & Associates homepage.">
+    <!-- STRICT NOINDEX FOR ERROR PAGES -->
+    <meta name="robots" content="noindex, follow"> 
+    <meta name="author" content="Avnish S & Associates">
+    
+    <!-- SECURITY HEADERS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com https://www.googletagmanager.com;">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- GOOGLE ANALYTICS (Crucial for tracking broken links) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01YJ2ZVMQW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-01YJ2ZVMQW');
+    </script>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- FONTS & ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
-        body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; background: #020d17; color: #fff; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
-        .container { max-width: 600px; padding: 20px; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 8rem; margin: 0; color: #c5a059; line-height: 1; }
-        h2 { font-size: 2rem; margin-bottom: 20px; font-weight: 400; }
-        p { color: #888; margin-bottom: 40px; font-size: 1.1rem; }
-        .btn { padding: 15px 35px; background: #c5a059; color: #fff; text-decoration: none; font-weight: 700; border-radius: 2px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
-        .btn:hover { background: #fff; color: #020d17; }
+        /* =========================================
+           CORE SYSTEM & TITAN VARIABLES
+           ========================================= */
+        :root {
+            --navy-deep: #020d17;
+            --navy-royal: #0a2540;
+            --gold-prime: #c5a059;
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+            --transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-subtle: 0 4px 15px rgba(0,0,0,0.05);
+            --shadow-hover: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; color: var(--navy-royal); margin-bottom: 15px; font-weight: 700; }
+        a { text-decoration: none; color: inherit; transition: all 0.3s var(--transition); }
+        ul { list-style: none; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 25px; }
+
+        .btn { display: inline-block; padding: 14px 32px; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; border-radius: 2px; cursor: pointer; transition: all 0.3s var(--transition); border: 2px solid transparent; }
+        .btn-gold { background-color: var(--gold-prime); color: var(--white); box-shadow: 0 4px 10px rgba(197, 160, 89, 0.2); }
+        .btn-gold:hover { background-color: var(--navy-royal); color: var(--white); transform: translateY(-2px); }
+
+        /* =========================================
+           NAVBAR (Consolidated)
+           ========================================= */
+        .site-header { position: sticky; top: 0; z-index: 9999; width: 100%; box-shadow: var(--shadow-subtle); transition: all 0.3s ease; background: var(--white); }
+        .exact-top-bar { background-color: var(--navy-deep); padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .top-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: flex-end; align-items: center; }
+        .top-contact-info { display: flex; gap: 30px; margin-right: 20px; }
+        .top-contact-info a { color: #96a1af; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; transition: 0.3s; font-weight: 700;}
+        .top-contact-info a:hover { color: var(--white); }
+        .top-contact-info i { color: var(--gold-prime); }
+        
+        .main-nav-bar { height: 85px; display: flex; align-items: center; transition: height 0.3s ease; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        
+        .brand-logo { display: flex; align-items: center; gap: 12px; }
+        .brand-logo i { font-size: 2.2rem; color: var(--navy-royal); }
+        .brand-text { display: flex; flex-direction: column; }
+        .brand-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy-royal); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.1; }
+        .brand-subtitle { font-family: 'Lato', sans-serif; font-size: 0.65rem; color: #666; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 700; margin-top: 2px; }
+
+        .nav-menu { display: flex; align-items: center; gap: 30px; }
+        .nav-menu li { position: relative; }
+        .nav-link { font-weight: 700; font-size: 0.85rem; color: var(--navy-royal); text-transform: uppercase; letter-spacing: 0.5px; padding: 30px 0; cursor: pointer; transition: 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--gold-prime); }
+        
+        .dropdown-menu { position: absolute; top: 100%; left: -20px; background: var(--white); min-width: 240px; box-shadow: var(--shadow-hover); opacity: 0; visibility: hidden; transform: translateY(15px); transition: all 0.3s ease; border-top: 3px solid var(--gold-prime); padding: 10px 0; z-index: 1000; }
+        .has-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu a { display: block; padding: 12px 25px; color: var(--text-dark); font-size: 0.9rem; transition: 0.3s; }
+        .dropdown-menu a:hover { background-color: rgba(197, 160, 89, 0.05); color: var(--gold-prime); padding-left: 32px; }
+        
+        .btn-contact { display: inline-block; padding: 10px 24px; border: 2px solid var(--gold-prime); color: var(--navy-royal); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; margin-left: 10px; }
+        .btn-contact:hover { background: var(--gold-prime); color: var(--white); }
+        .hamburger-icon { display: none; font-size: 1.5rem; color: var(--navy-royal); cursor: pointer; }
+
+        /* =========================================
+           404 SPECIFIC STYLES
+           ========================================= */
+        .error-wrapper {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--navy-deep);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .error-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 10rem;
+            margin: 0;
+            color: var(--gold-prime);
+            line-height: 1;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .error-content h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .error-content p {
+            color: #b0b0b0;
+            font-size: 1.2rem;
+            max-width: 500px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+        
+        .error-links {
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+        
+        .error-links a {
+            color: var(--gold-prime);
+            margin: 0 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        
+        .error-links a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /* =========================================
+           FOOTER (Consolidated)
+           ========================================= */
+        .titan-footer { background-color: var(--navy-deep); color: #b0b0b0; padding-top: 80px; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-cta { display: flex; justify-content: space-between; align-items: center; padding-bottom: 60px; }
+        .cta-text h3 { color: #fff; font-size: 2rem; margin-bottom: 5px; }
+        .cta-text p { color: var(--gold-prime); font-size: 1.1rem; margin: 0; }
+        .footer-divider { height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); margin-bottom: 60px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; }
+        .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #fff; margin-bottom: 20px; display: block; }
+        .brand-desc { line-height: 1.6; margin-bottom: 25px; opacity: 0.8; }
+        .social-links-footer { display: flex; gap: 15px; }
+        .social-links-footer a { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; transition: all 0.3s; }
+        .social-links-footer a:hover { background: var(--gold-prime); border-color: var(--gold-prime); color: var(--navy-deep); }
+        .footer-col h4 { color: #fff; margin-bottom: 25px; font-size: 1.1rem; letter-spacing: 1px; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { transition: all 0.3s; display: inline-block; }
+        .footer-links a:hover { color: var(--gold-prime); transform: translateX(5px); }
+        .contact-col p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 10px; }
+        .contact-col i { color: var(--gold-prime); margin-top: 5px; }
+        .footer-bottom-row { background: rgba(0,0,0,0.2); padding: 30px 40px; border-radius: 4px 4px 0 0; display: flex; justify-content: space-between; align-items: center; border-top: 3px solid var(--gold-prime); }
+        .newsletter-area { display: flex; align-items: center; gap: 20px; }
+        .newsletter-area span { color: #fff; font-weight: 700; }
+        .footer-form { display: flex; }
+        .footer-form input { padding: 12px 15px; border: none; outline: none; background: #fff; font-family: 'Lato', sans-serif; min-width: 250px; }
+        .footer-form button { background: var(--gold-prime); border: none; width: 50px; cursor: pointer; color: #fff; transition: 0.3s; font-size: 1.1rem; }
+        .footer-form button:hover { background: #fff; color: var(--navy-deep); }
+        .legal-links { font-size: 0.85rem; }
+        .legal-links a { color: #888; margin-left: 20px; transition: 0.3s; }
+        .legal-links a:hover { color: var(--gold-prime); }
+        .fab-wa { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); z-index: 900; transition: var(--transition); }
+        .fab-wa:hover { transform: scale(1.1); }
+
+        @media (max-width: 992px) {
+            .top-contact-info { display: none; }
+            .hamburger-icon { display: block; }
+            .nav-menu { position: absolute; top: 85px; left: -100%; width: 100%; background: var(--white); flex-direction: column; gap: 0; box-shadow: 0 10px 15px rgba(0,0,0,0.1); transition: 0.4s ease; text-align: left; padding-bottom: 20px; }
+            .nav-menu.active { left: 0; }
+            .nav-menu li { width: 100%; border-bottom: 1px solid #eee; }
+            .nav-link { display: block; padding: 15px 20px; }
+            .dropdown-menu { position: relative; top: 0; left: 0; width: 100%; box-shadow: none; border-top: none; opacity: 1; visibility: visible; transform: none; display: none; background: #f9f9f9; }
+            .has-dropdown.open .dropdown-menu { display: block; }
+            .btn-contact { margin: 20px; text-align: center; }
+            
+            .error-content h1 { font-size: 6rem; }
+            .error-links a { display: block; margin: 15px 0; }
+            
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .footer-cta, .footer-bottom-row, .newsletter-area { flex-direction: column; text-align: center; gap: 20px; }
+        }
+        @media (max-width: 500px) { .footer-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>404</h1>
-        <h2>Case Not Found</h2>
-        <p>The page you are looking for might have been moved, renamed, or is temporarily unavailable.</p>
-        <a href="index.html" class="btn">Return to Homepage</a>
-    </div>
+
+    <!-- SEMANTIC HEADER -->
+    <header class="site-header" id="mainHeader">
+        <div class="exact-top-bar">
+            <div class="top-bar-inner">
+                <div class="top-contact-info">
+                    <a href="mailto:csavnishsharma@gmail.com" aria-label="Email Us"><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</a>
+                    <a href="tel:+918126828661" aria-label="Call Us"><i class="fas fa-phone-alt"></i> +91-8126828661</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav-bar" id="navBar" aria-label="Main Navigation">
+            <div class="nav-inner">
+                <a href="index.html" class="brand-logo" aria-label="Homepage">
+                    <i class="fas fa-balance-scale"></i>
+                    <div class="brand-text">
+                        <span class="brand-title">Avnish S & Associates</span>
+                        <span class="brand-subtitle">Corporate Legal Strategy</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">The Firm <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="heritage.html">Our Heritage</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link" tabindex="0">Practice Areas <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-corporate.html">Corporate Governance</a></li>
+                            <li><a href="service-taxation.html">Taxation & GST</a></li>
+                            <li><a href="service-fema.html">FEMA & RBI</a></li>
+                            <li><a href="service-nclt.html">Litigation (NCLT)</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <span class="nav-link active" tabindex="0">Resources <i class="fas fa-chevron-down" style="font-size: 0.6rem; margin-left: 5px;"></i></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="fdi-calculator.html" style="color: var(--gold-prime); font-weight:700;"><i class="fas fa-calculator" style="margin-right:8px;"></i> FDI Route Finder</a></li>
+                            <li><a href="links.html">Useful Links</a></li>
+                            <li><a href="https://lawwheelsservices.co.in/blog" target="_blank" rel="noopener noreferrer">Legal Insights</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
+                </ul>
+
+                <div class="hamburger-icon" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="error-wrapper" aria-label="404 Error Content">
+        <div class="container">
+            <div class="error-content">
+                <h1>404</h1>
+                <h2>Case Not Found</h2>
+                <p>The regulatory page or legal resource you are looking for has been moved, archived, or does not exist on our servers.</p>
+                
+                <a href="index.html" class="btn btn-gold" aria-label="Return to Homepage">Return to Homepage</a>
+                
+                <div class="error-links">
+                    <a href="contact.html">Contact Support</a>
+                    <a href="service-corporate.html">View Practice Areas</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SEMANTIC FOOTER -->
+    <footer class="titan-footer" aria-label="Site Footer">
+        <div class="container">
+            <div class="footer-cta">
+                <div class="cta-text">
+                    <h3>Ready to Engineer Your Growth?</h3>
+                    <p>Partner with India's premier corporate legal strategists.</p>
+                </div>
+                <a href="contact.html" class="btn btn-gold">Schedule Consultation</a>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="index.html" class="footer-logo">Avnish S & Associates</a>
+                    <p class="brand-desc">We provide the legal infrastructure for high-growth enterprises. Precision. Integrity. Excellence.</p>
+                    <div class="social-links-footer">
+                        <a href="https://www.linkedin.com/company/law-wheels-services-llp/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>The Firm</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Our Heritage</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Expertise</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-corporate.html">Corporate Law</a></li>
+                        <li><a href="service-taxation.html">Taxation & GST</a></li>
+                        <li><a href="service-fema.html">FEMA Advisory</a></li>
+                        <li><a href="service-nclt.html">Dispute Resolution</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col contact-col">
+                    <h4>Centralized Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Office No. T-93F, Galaxy Blue Sapphire, Sector-4, Greater Noida West, U.P - 201308</p>
+                    <p><i class="fas fa-phone-alt"></i> +91-8126828661</p>
+                    <p><i class="fas fa-envelope"></i> csavnishsharma@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom-row">
+                <div class="newsletter-area">
+                    <span>Subscribe to Legal Insights:</span>
+                    <form onsubmit="subscribeNewsletter(event)" class="footer-form">
+                        <input type="email" id="news-email" placeholder="Corporate Email Address" aria-label="Email Address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="legal-links">
+                    <span>&copy; 2026 Avnish S & Associates</span>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Engagement</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CENTRALIZED WHATSAPP FAB -->
+    <a href="https://wa.me/918126828661" class="fab-wa" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- FUNCTIONAL SCRIPTS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navBar = document.getElementById('navBar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) { navBar.style.height = '70px'; } 
+                else { navBar.style.height = '85px'; }
+            });
+
+            const hamburgerBtn = document.getElementById('hamburgerBtn');
+            const navMenu = document.getElementById('navMenu');
+            hamburgerBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = hamburgerBtn.querySelector('i');
+                if(navMenu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars'); icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times'); icon.classList.add('fa-bars');
+                }
+            });
+
+            const dropdowns = document.querySelectorAll('.has-dropdown');
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if(window.innerWidth <= 992) {
+                        if(e.target.tagName === 'SPAN' || e.target.tagName === 'I') {
+                            this.classList.toggle('open');
+                        }
+                    }
+                });
+            });
+        });
+
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            var email = document.getElementById('news-email').value;
+            if(email) {
+                alert("Welcome to the inner circle! You will receive our premium corporate updates at " + email);
+                document.getElementById('news-email').value = "";
+            }
+        }
+    </script>
 </body>
 </html>
